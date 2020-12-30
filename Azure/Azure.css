@@ -1,0 +1,3606 @@
+* a{
+    text-decoration: none;
+}
+/*顶部导航栏的搭建*/
+.top-bar{
+    background-color:#1a1a1a;
+    margin: -8px;
+}
+.picture{
+    width: 333px;
+    height: 57px;
+}
+#icon{
+    position: relative;
+    left: 955px;
+    top: -13px;
+    fill:#8a8a8a;
+}
+#icon:hover{
+     fill: white;
+}
+.sign-up{
+    text-decoration: none;
+    position: relative;
+    left: 985px;
+    top: -20px;
+    color: #8a8a8a
+}
+.sign-up:hover{
+    color: white;
+}
+/*搜索框*/
+#search-box{
+    position: absolute;
+    width: 280px;
+    height: 44px;
+    margin: 0px;
+    padding: 0px;
+    left: 1050px;
+    top: 0px;
+    border: none;
+    display: none;
+}
+#search-inp{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 236px;
+    height: 44px;
+    margin: 0px;
+    padding: 0px;
+    border: solid 1px #d1d1d1;
+    font-size: 18px;
+}
+button{
+    width: 44px;
+    height: 46px;
+    position: absolute;
+    left: 238px;
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #d6e9f9;
+    border: none;
+}
+
+/*顶部列表和下拉框的搭建*/
+.top-list{
+    width: 1602px;
+    background-color: #1a1a1a;
+    height: 35px;
+    margin: -10px;
+    padding: -10px;
+    position: relative;
+    top: -6px;
+}
+.top-ul li{
+    float: left;
+    list-style: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+    position: relative;
+    left: -41px;
+    top: 5px;
+    font-weight: 200;
+}
+.top-ul a{
+    color: white;
+}
+/*第一个下拉菜单*/
+.know-Azure{
+    width: 700px;
+    height: 229px;
+    background-color:white;
+    position: relative;
+    top: 9px;
+    display: none;
+    margin-right: -800px;
+    z-index: 1000;
+}
+#what-is-Azure{
+    width: 639px;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    top: 22px;
+    font-size: 18px;
+}
+#what-is-Azure a{
+    text-decoration: none;
+    color: black;
+}
+#what-is-Azure-a:hover{
+    color: #0078D4;
+}
+#what-is-Azure-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left: -42px;
+}
+#china-vs-globe{
+    position: relative;
+    top: 70px;
+    width: 639px;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#china-vs-globe a{
+    text-decoration: none;
+    color: black;
+}
+#china-vs-globe-a:hover{
+    color: #0078D4;
+}
+#china-vs-globe-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#Azure-service{
+    position: relative;
+    top: 115px;
+    width: 639px;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#Azure-service a{
+    text-decoration: none;
+    color: black;
+}
+#Azure-service-a:hover{
+    color: #0078D4;
+}
+#Azure-service-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left: -42px;
+}
+#renshi-Azure #one:hover{
+    color: #0078D4;
+    text-decoration: underline;
+}
+.top-ul li:hover .know-Azure{
+    display: block;
+}
+/*搭建第二个下拉菜单*/
+.product{
+    width: 255px;
+    height: 720px;
+    background-color: black;
+    position: relative;
+    top: 9px;
+    left: -110px;
+    margin-right: -250px;
+    display: none;
+    z-index: 1000;
+}
+.product1 li{
+    display: flex;
+    width: 255px;
+    height: 40px;
+    position: relative;
+    left: -55px;
+    top: 0px;
+}
+.product li:hover{
+    background-color:#0078D4;
+}
+.product1 li span{
+     margin-left: 18px;
+     margin-top: 10px;
+}
+.product1 i{
+    position: absolute;
+    left: 215px;
+} 
+.top-ul li:hover .product{
+    display: block;
+}
+#chanpin #two:hover{
+    color: #0078D4;
+    text-decoration: underline;
+}
+/*搭建第二个下拉菜单AI的拓展菜单*/
+.AI-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+}
+#know-service a{
+    text-decoration: none;
+    color: black;
+}
+#know-service-a:hover{
+    color: #0078D4;
+}
+#know-service-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#know-service{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 17px;
+}
+#face-recognition a{
+    text-decoration: none;
+    color: black;
+}
+#face-recognition-a:hover{
+    color: #0078D4;
+}
+#face-recognition-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#face-recognition{
+    top: 65px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+
+#computer-sight a{
+    text-decoration: none;
+    color: black;
+}
+#computer-sight-a:hover{
+    color: #0078D4;
+}
+#computer-sight-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#computer-sight{
+    top: 105px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#content-shencha a{
+    text-decoration: none;
+    color: black;
+}
+#content-shencha-a:hover{
+    color: #0078D4;
+}
+#content-shencha-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#content-shencha{
+    top: 145px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#text-fenxi a{
+    text-decoration: none;
+    color: black;
+}
+#text-fenxi-a:hover{
+    color: #0078D4;
+}
+#text-fenxi-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#text-fenxi{
+    top: 185px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#text-translation a{
+    text-decoration: none;
+    color: black;
+}
+#text-translation-a:hover{
+    color: #0078D4;
+}
+#text-translation-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#text-translation{
+    top: 225px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#language-understanding a{
+    text-decoration: none;
+    color: black;
+}
+#language-understanding-a:hover{
+    color: #0078D4;
+}
+#language-understanding-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#language-understanding{
+    top: 265px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#yuyinfuwu a{
+    text-decoration: none;
+    color: black;
+}
+#yuyinfuwu-a:hover{
+    color: #0078D4;
+}
+#yuyinfuwu-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#yuyinfuwu{
+    top: 305px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#Metrics-Advisor a{
+    text-decoration: none;
+    color: black;
+}
+#Metrics-Advisor-a:hover{
+    color: #0078D4;
+}
+#Metrics-Advisor-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#Metrics-Advisor{
+    top: 345px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 17px;
+}
+#Azure-recognition a{
+    text-decoration: none;
+    color: black;
+}
+#Azure-recognition-a:hover{
+    color: #0078D4;
+}
+#Azure-recognition-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#Azure-recognition{
+    top: 385px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 17px;
+}
+#robot-learning a{
+    text-decoration: none;
+    color: black;
+}
+#robot-learning-a:hover{
+    color: #0078D4;
+}
+#robot-learning-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#robot-learning{
+    top: 425px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 17px;
+}
+.product1 li:hover .AI-tuozhan{
+    display: block;
+}
+.product1 span{
+    position: absolute;
+
+}
+/*搭建第二个下拉菜单下Azure Stack的拓展菜单*/
+.Azure-Stack-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+    top: -40px;
+    display: none;
+}
+#Azure-Stack a{
+    text-decoration: none;
+    color: black;
+}
+#Azure-Stack-a:hover{
+    color: #0078D4;
+}
+#Azure-Stack-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#Azure-Stack{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .Azure-Stack-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下安全性的拓展菜单*/
+.anquanxing-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+    top: -80px;
+    display: none;
+}
+#secret-key a{
+    text-decoration: none;
+    color: black;
+}
+#secret-key-a:hover{
+    color: #0078D4;
+}
+#secret-key-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#secret-key{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#Azure-Active-Directory a{
+    text-decoration: none;
+    color: black;
+}
+#Azure-Active-Directory-a:hover{
+    color: #0078D4;
+}
+#Azure-Active-Directory-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#Azure-Active-Directory{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#programing a{
+    text-decoration: none;
+    color: black;
+}
+#programing-a:hover{
+    color: #0078D4;
+}
+#programing-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#programing{
+    top: 105px;
+    width:470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#web-wall a{
+    text-decoration: none;
+    color: black;
+}
+#web-wall-a:hover{
+    color: #0078D4;
+}
+#web-wall-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#web-wall{
+    top: 145px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#vpn a{
+    text-decoration: none;
+    color: black;
+}
+#vpn-a:hover{
+    color: #0078D4;
+}
+#vpn-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#vpn{
+    top: 185px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#anquan-center a{
+    text-decoration: none;
+    color: black;
+}
+#anquan-center-a:hover{
+    color: #0078D4;
+}
+#anquan-center-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#anquan-center{
+    top: 225px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#information-protection a{
+    text-decoration: none;
+    color: black;
+}
+#information-protection-a:hover{
+    color: #0078D4;
+}
+#information-protection-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#information-protection{
+    top: 265px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#yu a{
+    text-decoration: none;
+    color: black;
+}
+#yu-a:hover{
+    color: #0078D4;
+}
+#yu-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#yu{
+    top: 305px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .anquanxing-tuozhan{
+    display: block;
+}
+/*现在搭建第二个下拉菜单下标识的拓展菜单*/
+.biaoshi-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+    top: -120px;
+    display: none;
+}
+#A a{
+    text-decoration: none;
+    color: black;
+}
+#A-a:hover{
+    color: #0078D4;
+}
+#A-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#A{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#B a{
+    text-decoration: none;
+    color: black;
+}
+#B-a:hover{
+    color: #0078D4;
+}
+#B-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#B{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#ID a{
+    text-decoration: none;
+    color: black;
+}
+#ID-a:hover{
+    color: #0078D4;
+}
+#ID-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#ID{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#information-protection-1 a{
+    text-decoration: none;
+    color: black;
+}
+#information-protection-1-a:hover{
+    color: #0078D4;
+}
+#information-protection-1-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#information-protection-1{
+    top: 145px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#yu-1 a{
+    text-decoration: none;
+    color: black;
+}
+#yu-1-a:hover{
+    color: #0078D4;
+}
+#yu-1-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#yu-1{
+    top: 185px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .biaoshi-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下储存的拓展菜单*/
+.chucun-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+    top: -160px;
+    display: none;
+}
+#chucun a{
+    text-decoration: none;
+    color: black;
+}
+#chucun-a:hover{
+    color: #0078D4;
+}
+#chucun-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#chucun{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#blob a{
+    text-decoration: none;
+    color: black;
+}
+#blob-a:hover{
+    color: #0078D4;
+}
+#blob-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#blob{
+    top: 65px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 18px;
+}
+#S a{
+    text-decoration: none;
+    color: black;
+}
+#S-a:hover{
+    color: #0078D4;
+}
+#S-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#S{
+    top: 105px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 18px;
+}
+#cipan a{
+    text-decoration: none;
+    color: black;
+}
+#cipan-a:hover{
+    color: #0078D4;
+}
+#cipan-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#cipan{
+    top: 145px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 18px;
+}
+#tuoguan a{
+    text-decoration: none;
+    color: black;
+}
+#tuoguan-a:hover{
+    color: #0078D4;
+}
+#tuoguan-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#tuoguan{
+    top: 185px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 18px;
+}
+#line a{
+    text-decoration: none;
+    color: black;
+}
+#line-a:hover{
+    color: #0078D4;
+}
+#line-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#line{
+    top: 225px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 18px;
+}
+#doc a{
+    text-decoration: none;
+    color: black;
+}
+#doc-a:hover{
+    color: #0078D4;
+}
+#doc-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#doc{
+    top: 265px;
+    width: 420px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 75px;
+    font-size: 18px;
+}
+#DB a{
+    text-decoration: none;
+    color: black;
+}
+#DB-a:hover{
+    color: #0078D4;
+}
+#DB-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#DB{
+    top: 305px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left:30px;
+    font-size: 18px;
+}
+.product1 li:hover .chucun-tuozhan{
+    display: block;
+}
+   
+/*搭建第二个下拉菜单下分析的拓展菜单*/
+.analyse-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+    top: -200px;
+    display: none;
+}
+
+#SQ a{
+    text-decoration: none;
+    color: black;
+}
+#SQ-a:hover{
+    color: #0078D4;
+}
+#SQ-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#SQ{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#HD-insight a{
+    text-decoration: none;
+    color: black;
+}
+#HD-insight-a:hover{
+    color: #0078D4;
+}
+#HD-insight-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#HD-insight{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#liu a{
+    text-decoration: none;
+    color: black;
+}
+#liu-a:hover{
+    color: #0078D4;
+}
+#liu-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#liu{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#PB a{
+    text-decoration: none;
+    color: black;
+}
+#PB-a:hover{
+    color: #0078D4;
+}
+#PB-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#PB{
+    top: 145px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#A-service a{
+    text-decoration: none;
+    color: black;
+}
+#A-service-a:hover{
+    color: #0078D4;
+}
+#A-service-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#A-service{
+    top: 185px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#shijian-center a{
+    text-decoration: none;
+    color: black;
+}
+#shijian-center-a:hover{
+    color: #0078D4;
+}
+#shijian-center-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#shijian-center{
+    top: 225px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#date a{
+    text-decoration: none;
+    color: black;
+}
+#date-a:hover{
+    color: #0078D4;
+}
+#date-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#date{
+    top: 265px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#A-guanli a{
+    text-decoration: none;
+    color: black;
+}
+#A-guanli-a:hover{
+    color: #0078D4;
+}
+#A-guanli-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#A-guanli{
+    top: 305px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .analyse-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下管理工具的拓展菜单*/
+.guanli-tool-tuozhan{
+    width: 500px;
+    height: 720px;
+    background-color:white;
+    position: absolute;
+    left: 255px;
+    top: -240px;
+    display: none;
+}
+
+#gate a{
+    text-decoration: none;
+    color: black;
+}
+#gate-a:hover{
+    color: #0078D4;
+}
+#gate-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#gate{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+
+#guwen a{
+    text-decoration: none;
+    color: black;
+}
+#guwen-a:hover{
+    color: #0078D4;
+}
+#guwen-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#guwen{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+
+#zidonghua a{
+    text-decoration: none;
+    color: black;
+}
+#zidonghua-a:hover{
+    color: #0078D4;
+}
+#zidonghua-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#zidonghua{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .guanli-tool-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单集成的拓展菜单*/
+.jicheng-tuozhan{
+    height: 720px;
+    position: absolute;
+    left: 255px;
+    top: -280px;
+    background-color:white;
+    display: none;
+    width: 500px;
+}
+#Z a{
+    text-decoration: none;
+    color: black;
+}
+#Z-a:hover{
+    color: #0078D4;
+}
+#Z-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#Z{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+
+#API-guanli a{
+    text-decoration: none;
+    color: black;
+}
+#API-guanli-a:hover{
+    color: #0078D4;
+}
+#API-guanli-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#API-guanli{
+    top:65PX;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+
+#shijian-net a{
+    text-decoration: none;
+    color: black;
+}
+#shijian-net-a:hover{
+    color: #0078D4;
+}
+#shijian-net-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#shijian-net{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .jicheng-tuozhan{
+    display: block;
+}
+/*集中设置列表的下划线以及hover*/
+.three:hover{
+    color: #0078D4;
+    text-decoration: underline;
+}
+/*搭建第二个下拉菜单下计算的拓展菜单*/
+.jisuan-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -320px;
+    display: none;
+}
+#xuniji a{
+    text-decoration: none;
+    color: black;
+}
+#xuniji-a:hover{
+    color: #0078D4;
+}
+#xuniji-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#xuniji{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#J a{
+    text-decoration: none;
+    color: black;
+}
+#J-a:hover{
+    color: #0078D4;
+}
+#J-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#J{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#app a{
+    text-decoration: none;
+    color: black;
+}
+#app-a:hover{
+    color: #0078D4;
+}
+#app-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#app{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .jisuan-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下联网的拓展菜单*/
+.lianwang-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -360px;
+    display: none;
+}
+#CDN a{
+    text-decoration: none;
+    color: black;
+}
+#CDN-a:hover{
+    color: #0078D4;
+}
+#CDN-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#CDN{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}#ER a{
+    text-decoration: none;
+    color: black;
+}
+#ER-a:hover{
+    color: #0078D4;
+}
+#ER-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#ER{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}#AD a{
+    text-decoration: none;
+    color: black;
+}
+#AD-a:hover{
+    color: #0078D4;
+}
+#AD-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#AD{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .lianwang-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下媒体的拓展菜单*/
+.meiti-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -400px;
+    display: none;
+}
+#M a{
+    text-decoration: none;
+    color: black;
+}
+#M-a:hover{
+    color: #0078D4;
+}
+#M-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#M{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .meiti-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下迁移的拓展菜单*/
+.qianyi-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -440px;
+    display: none;
+}
+#zhandian a{
+    text-decoration: none;
+    color: black;
+}
+#zhandian-a:hover{
+    color: #0078D4;
+}
+#zhandian-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#zhandian{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#date-qianyi a{
+    text-decoration: none;
+    color: black;
+}
+#date-qianyi-a:hover{
+    color: #0078D4;
+}
+#date-qianyi-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#date-qianyi{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .qianyi-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下容器的拓展菜单*/
+.rongqi-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -480px;
+    display: none;
+}
+#SF a{
+    text-decoration: none;
+    color: black;
+}
+#SF-a:hover{
+    color: #0078D4;
+}
+#SF-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#SF{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#biao a{
+    text-decoration: none;
+    color: black;
+}
+#biao-a:hover{
+    color: #0078D4;
+}
+#biao-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#biao{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#pi a{
+    text-decoration: none;
+    color: black;
+}
+#pi-a:hover{
+    color: #0078D4;
+}
+#pi-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#pi{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .rongqi-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下数据库的拓展菜单*/
+.shujuku-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -520px;
+    display: none;
+}
+#SQLshuju a{
+    text-decoration: none;
+    color: black;
+}
+#SQLshuju-a:hover{
+    color: #0078D4;
+}
+#SQLshuju-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#SQLshuju{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#SQLshujucangku a{
+    text-decoration: none;
+    color: black;
+}
+#SQLshujucangku-a:hover{
+    color: #0078D4;
+}
+#SQLshujucangku-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#SQLshujucangku{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#SSSD a{
+    text-decoration: none;
+    color: black;
+}
+#SSSD-a:hover{
+    color: #0078D4;
+}
+#SSSD-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#SSSD{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .shujuku-tuozhan{
+    display: block;
+}
+/*搭建第二个数据库下网站的拓展菜单*/
+.wangzhan-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -560px;
+    display: none;
+}
+#ASRservice a{
+    text-decoration: none;
+    color: black;
+}
+#ASRservice-a:hover{
+    color: #0078D4;
+}
+#ASRservice-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#ASRservice{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .wangzhan-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下物联网的拓展*/
+.wulianwang-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -600px;
+    display: none;
+}
+#ATcenter a{
+    text-decoration: none;
+    color: black;
+}
+#ATcenter-a:hover{
+    color: #0078D4;
+}
+#ATcenter-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#ATcenter{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#ATbianyuan a{
+    text-decoration: none;
+    color: black;
+}
+#ATbianyuan-a:hover{
+    color: #0078D4;
+}
+#ATbianyuan-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#ATbianyuan{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#ACDB a{
+    text-decoration: none;
+    color: black;
+}
+#ACDB-a:hover{
+    color: #0078D4;
+}
+#ACDB-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#ACDB{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .wulianwang-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下移动的拓展*/
+.yidong-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -640px;
+    display: none;
+}
+#tongzhicenter a{
+    text-decoration: none;
+    color: black;
+}
+#tongzhicenter-a:hover{
+    color: #0078D4;
+}
+#tongzhicenter-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#tongzhicenter{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#yidongapp a{
+    text-decoration: none;
+    color: black;
+}
+#yidongapp-a:hover{
+    color: #0078D4;
+}
+#yidongapp-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#yidongapp{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#APIapp a{
+    text-decoration: none;
+    color: black;
+}
+#APIapp-a:hover{
+    color: #0078D4;
+}
+#APIapp-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#APIapp{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .yidong-tuozhan{
+    display: block;
+}
+/*搭建第二个下拉菜单下开发者人员工具的拓展菜单*/
+.kaifazhe-tuozhan{
+    width: 500px;
+    height: 720px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -680px;
+    display: none;
+}
+#kaifachengxu a{
+    text-decoration: none;
+    color: black;
+}
+#kaifachengxu-a:hover{
+    color: #0078D4;
+}
+#kaifachengxu-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#kaifachengxu{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.product1 li:hover .kaifazhe-tuozhan{
+    display: block;
+}
+/*搭建第三个下拉菜单*/
+.anliyuhuoban{
+    width: 703px;
+    height: 163px;
+    background-color:white;
+    position: relative;
+    top: 9px;
+    left: -326px;
+    margin-right: -800px;
+    display: none;
+    z-index: 1000;
+}
+#anliyanjiu{
+    width: 639px;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    top: 22px;
+    font-size: 18px;
+}
+#anliyanjiu a{
+    text-decoration: none;
+    color: black;
+}
+#anliyanjiu-a:hover{
+    color: #0078D4;
+}
+#anliyanjiu-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left: -42px;
+}
+#huoban{
+    width: 639px;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    top: 70px;
+    font-size: 18px;
+}
+#huoban a{
+    text-decoration: none;
+    color: black;
+}
+#huoban-a:hover{
+    color: #0078D4;
+}
+#huoban-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left: -42px;
+}
+.top-ul li:hover .anliyuhuoban{
+    display: block;
+}
+/*搭建第四个下拉菜单*/
+.wendang{
+    width: 255px;
+    height: 405px;
+    background-color: black;
+    position: relative;
+    top: 9px;
+    left: -436px;
+    margin-right: -250px;
+    display: none;
+    z-index: 1000;
+}
+.wendang1 li{
+    display: flex;
+    width: 255px;
+    height: 40px;
+    position: relative;
+    left: -55px;
+    top: -0px;
+}
+.wendang li:hover{
+    background-color:#0078D4;
+}
+.wendang1 li span{
+     margin-left: 18px;
+     margin-top: 10px;
+}
+.wendang1 i{
+    position: absolute;
+    left: 215px;
+} 
+.top-ul li:hover .wendang {
+    display: block;
+}
+.wendang1 span{
+    position: absolute;
+}
+/*搭建第四个下拉菜单下技术文档的拓展菜单*/
+.jishuwendang-tuozhan{
+    width: 500px;
+    height: 405px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: 0px;
+}
+#jishuwendang a{
+    text-decoration: none;
+    color: black;
+}
+#jishuwendang-a:hover{
+    color: #0078D4;
+}
+#jishuwendang-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#jishuwendang{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+/*搭建第四个下拉菜单下购买+计费的拓展*/
+.goumai-tuozhan{
+    width: 500px;
+    height: 405px;
+    position: absolute;
+    background-color: white;
+    left: 255px;
+    top: -40px;
+    display: none;
+}
+#zhongguoqu a{
+    text-decoration: none;
+    color: black;
+}
+#zhongguoqu-a:hover{
+    color: #0078D4;
+}
+#zhongguoqu-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#zhongguoqu{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#quanqiucaigou a{
+    text-decoration: none;
+    color: black;
+}
+#quanqiucaigou-a:hover{
+    color: #0078D4;
+}
+#quanqiucaigou-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#quanqiucaigou{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#zhongguojifei a{
+    text-decoration: none;
+    color: black;
+}
+#zhongguojifei-a:hover{
+    color: #0078D4;
+}
+#zhongguojifei-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#zhongguojifei{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.wendang1 li:hover .goumai-tuozhan{
+    display: block;
+}
+/*搭建第五个下拉菜单*/
+.zhichi{
+    width: 700px;
+    height: 625px;
+    position: absolute;
+    background-color: white;
+    left: -621px;
+    top: 30px;
+    display: none;
+    z-index: 1000;
+}
+#lianxiwomen a{
+    text-decoration: none;
+    color: black;
+}
+#lianxiwomen-a:hover{
+    color: #0078D4;
+}
+#lianxiwomen-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#lianxiwomen{
+    top: 25px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#zhichijihua a{
+    text-decoration: none;
+    color: black;
+}
+#zhichijihua-a:hover{
+    color: #0078D4;
+}
+#zhichijihua-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#zhichijihua{
+    top: 65px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+#fuwu-panle a{
+    text-decoration: none;
+    color: black;
+}
+#fuwu-panle-a:hover{
+    color: #0078D4;
+}
+#fuwu-panle-dd a{
+    font-size: 14px;
+    color: #a9a9a9;
+    position: relative;
+    left:-42px;
+}
+#fuwu-panle{
+    top: 105px;
+    width: 470px;
+    position: relative;
+    height: 24px;
+    background-color: white;
+    position: relative;
+    left: 30px;
+    font-size: 18px;
+}
+.top-ul li:hover .zhichi{
+    display: block;
+}
+/*顶部右侧橙色按钮*/
+.shenqingshiyong{
+    width: 160px;
+    height: 48px;
+    background-color:#d83b01;
+    position: relative;
+    left: 1361px;
+    top: -13px;
+}
+.shenqingshiyong li{
+    list-style-type: none;
+    color: white;
+    position: absolute;
+    left: 45px;
+    top: 13px;
+    font-size: 16px;
+}
+.shenqingshiyong i{
+    position: absolute;
+    left: 75px;
+    top: 3px;
+    font-size: 18px;
+}
+.shenqingshiyong:hover{
+    background-color:#fd6730 ;
+}
+/*导航栏已经全部完成*/
+
+
+
+/*轮播图框架搭建*/
+#outer{
+    width: 1537px;
+    margin: 0px;
+    padding: 0px;
+    height: 370px;
+    position: absolute;
+    left: -2px;
+    top: 93px;
+    background-color:white;
+    overflow: hidden;
+    z-index: 1;
+}
+#picturelist li{
+    float: left;
+    list-style: none;
+}
+#picturelist{
+    position: absolute;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+/*导航条*/
+#daohangtiao{
+    position: absolute;
+    left: 610px;
+    top: 330px;
+}
+#daohangtiao a{
+    width: 50px;
+    height: 2.5px;
+    background-color: #5e5e5e;
+    float: left;
+    margin: 0 5px;
+}
+#daohangtiao a:hover{
+    background-color: white;
+
+}
+/*轮播图上小按钮*/
+#lunbotu-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    position: relative;
+    left: 13px;
+    top: 250px;
+}
+#lunbotu-btn:hover{
+    background-color:#0a91f8;
+}
+#lunbotu-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#lunbotu-btn-span i{
+    font-size: 20px;
+}
+/*二维码的建立*/
+#QR-code{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 1450px;
+    top: 670px;
+    background-color: white;
+    border: #cccccc solid 1px;
+    z-index: 1000000;
+}
+#QR-code i{
+    color: #0078d4;
+    font-size: 40px;
+    position: relative;
+    left: 4px;
+    top: 2px;
+}
+#QR-code:hover{
+    background-color: #0078d4;
+}
+#QR-code i:hover{
+    color: white;
+}
+#QRcode{
+    width: 100px;
+    height: 140px;
+    position: fixed;
+    background-color: white;
+    left: 1345px;
+    top: 570px;
+    border: #cccccc solid 1px;
+    display: none;
+    z-index: 10000;
+}
+#QRcode-img{
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+#ff{
+    position: relative;
+    left: 40px;
+    top: -50px;
+}
+#QRcode dd{
+    font-size: 13px;
+    margin: 0px;
+    position: relative;
+    left: 4px;
+    top: -10px;
+}
+
+
+/*中部三块导航栏*/
+.jishuwendang-daohang{
+    width: 511px;
+    height: 172px;
+    background-color:#e2e6ec;
+    position: absolute;
+    top: 459px;
+    left:0px;
+}
+#jishuwendang-daohang1{
+    position: relative;
+    left: 20px;
+    font-size: 28px;
+    top: 40px;
+    color: #0068b7;
+}
+#jishuwendang-daohang1 i{
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+}
+#jishuwendang-daohang2{
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+#zhongbudaohang1{
+    position: relative;
+    left:323px ;
+    top: -37px;
+}
+.jishuwendang-daohang:hover{
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear ;
+    -o-transition:all 0.5s linear ;
+    transition: all 0.5s linear;
+    background-color:#d4d8dd;
+}
+.jishuwendang-daohang a{
+    color: black;
+}
+.anliyanjiu-daohang{
+    width: 511px;
+    height: 172px;
+    background-color:#e2e6ec;
+    position: absolute;
+    top: 459px;
+    left: 512px;
+}
+#anliyanjiu-daohang1{
+    position: relative;
+    left: 20px;
+    font-size: 28px;
+    top: 40px;
+    color: #0068b7;
+}
+#anliyanjiu-daohang1 i{
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+}
+#anliyanjiu-daohang2{
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+#zhongbudaohang2{
+    position: relative;
+    left:323px ;
+    top: -40px;
+}
+.anliyanjiu-daohang:hover{
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear ;
+    -o-transition:all 0.5s linear ;
+    transition: all 0.5s linear;
+    background-color:#d4d8dd;
+}
+.anliyanjiu-daohang a{
+    color: black;
+}
+.zuixingonggao-daohang{
+    width: 511px;
+    height: 172px;
+    background-color:#e2e6ec;
+    position: absolute;
+    top: 459px;
+    left: 1024px;
+}
+#zuixingonggao-daohang1{
+    position: relative;
+    left: 20px;
+    font-size: 28px;
+    top: 40px;
+    color: #0068b7;
+}
+#zuixingonggao-daohang1 i{
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+}
+#zuixingonggao-daohang2{
+    font-size: 16px;
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+#zhongbudaohang3{
+    position: relative;
+    left:323px ;
+    top: -10px;
+}
+.zuixingonggao-daohang:hover{
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear ;
+    -o-transition:all 0.5s linear ;
+    transition: all 0.5s linear;
+    background-color:#d4d8dd;
+}
+.zuixingonggao-daohang a{
+    color: black;
+}
+/*中部三块导航栏搭建完毕*/
+
+
+/*搭建中部列表*/
+.zhongbuliebiao{
+    width: 1546px;
+    height: 410px;
+    background-color:#0078d4;
+    position: absolute;
+    left: -10px;
+    top: 631px;
+    z-index: 0;
+}
+.zhongbuliebiao li{
+    font-size: 17px;
+    margin: 20px;
+    list-style: none;
+    text-align: right;
+    position: relative;
+    left: -1290px;
+    top: 40px;
+}
+/*中部列表第一个菜单的搭建*/
+.dianzishangwu{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: relative;
+    left: 330px;
+    top: -265px;
+}
+#dianzishangwu-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao1{
+    position: relative;
+    left: -160px;
+    top: 115px;
+    
+}
+#dianzishangwu-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#dianzishangwu-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#dianzishangwu-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#dianzishangwu-btn-span:hover{
+    color: #0078d4;
+}
+#dianzishangwu-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#dianzishangwu-btn-span i{
+    font-size: 20px;
+}
+#shuzimeiti{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: relative;
+    left: 330px;
+    top: -576px;
+    display: none;
+}
+#shuzimeiti-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao2{
+    position: relative;
+    left: -160px;
+    top: 115px;
+    
+}
+#shuzimeiti-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#shuzimeiti-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#shuzimeiti-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#shuzimeiti-btn-span:hover{
+    color: #0078d4;
+}
+#shuzimeiti-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#shuzimeiti-btn-span i{
+    font-size: 20px;
+}
+
+#beifenhecundang{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: absolute;
+    left: 330px;
+    top: 51px;
+    display: none;
+}
+#beifenhecundang-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao3{
+    position: relative;
+    left: -200px;
+    top: 115px;
+    
+}
+#beifenhecundang-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#beifenhecundang-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#beifenhecundang-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#beifenhecundang-btn-span:hover{
+    color: #0078d4;
+}
+#beifenhecundang-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#beifenhecundang-btn-span i{
+    font-size: 20px;
+}
+#dashujuhefenxi{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: absolute;
+    left: 330px;
+    top: 51px;
+    display: none;
+}
+#dashujuhefenxi-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao4{
+    position: relative;
+    left: -250px;
+    top: 115px;
+    
+}
+#dashujuhefenxi-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#dashujuhefenxi-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#dashujuhefenxi-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#dashujuhefenxi-btn-span:hover{
+    color: #0078d4;
+}
+#dashujuhefenxi-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#dashujuhefenxi-btn-span i{
+    font-size: 20px;
+}
+#kaifayuceshi{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: absolute;
+    left: 330px;
+    top: 51px;
+    display: none;
+}
+#kaifayuceshi-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao5{
+    position: relative;
+    left: -210px;
+    top: 115px;
+    
+}
+#kaifayuceshi-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#kaifayuceshi-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#kaifayuceshi-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#kaifayuceshi-btn-span:hover{
+    color: #0078d4;
+}
+#kaifayuceshi-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#kaifayuceshi-btn-span i{
+    font-size: 20px;
+}
+#youxi{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: absolute;
+    left: 330px;
+    top: 51px;
+    display: none;
+}
+#youxi-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao6{
+    position: relative;
+    left: -90px;
+    top: 115px;
+    
+}
+#youxi-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#youxi-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#youxi-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#youxi-btn-span:hover{
+    color: #0078d4;
+}
+#youxi-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#youxi-btn-span i{
+    font-size: 20px;
+}
+#shuziyingxiao{
+    width: 808.5px;
+    height: 312px;
+    background-color:#0078d4 ;
+    position: absolute;
+    left: 330px;
+    top: 51px;
+    display: none;
+}
+#shuziyingxiao-span1{
+    color: white;
+    font-size: 40px;
+    position: relative;
+    top: -45px;
+}
+#zhongbuliebiao7{
+    position: relative;
+    left: -160px;
+    top: 115px;
+    
+}
+#shuziyingxiao-dd{
+    width: 750px;
+    height: 50px;
+    color: white;
+    text-align: left;
+    position: relative;
+    top: 120px;
+    left: -40px;
+    line-height: 25px;
+}
+#shuziyingxiao-btn{
+    width: 140px;
+    height: 40px;
+    background-color:#0078d4 ;
+    color: white;
+    border: solid 1px white;
+    position: relative;
+    left: 1px;
+    top: 129px;
+}
+#shuziyingxiao-btn-span{
+    position: relative;
+    left: 30px;
+    top: 10px;
+}
+#shuziyingxiao-btn-span:hover{
+    color: #0078d4;
+}
+#shuziyingxiao-btn:hover{
+    background-color: white;
+    color: #0078d4;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear ;
+    -o-transition:all 0.3s linear ;
+    transition: all 0.3s linear;
+}
+#shuziyingxiao-btn-span i{
+    font-size: 20px;
+}
+/*中部多块产品栏*/
+h2{
+    width: 1479.2px;
+    height: 44px;
+    color: black;
+    position: absolute;
+    top: 1050px;
+    left: 20px;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+#yunchanpin{
+    width: 1519.2px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 1150px;
+}
+/*云产品*/
+#ASC{
+    background-color: white;
+    position: relative;
+    top: 20px;
+    width: 369.8px;
+    height: 310px;
+    left: 20px;
+    margin: 0px;
+    padding: 0px;
+
+}
+#ASC-span{
+    position: relative;
+    left: 57px;
+    top: 20px;
+    font-size: 28px;
+}
+#ASC img{
+    position: relative;
+    left: 125px;
+    top: 40px;
+}
+#ASC-dd1{
+    position: relative;
+    top: 50px;
+    left: -20px;
+    text-align: center; 
+}
+#ASC a{
+    position: relative;
+    left: 140px;
+    top: 60px;
+    text-decoration: none;
+    color: #0078db;
+}
+#ASC a:hover{
+    text-decoration: underline;
+}
+#zhuanyonglianjie{
+    background-color: white;
+    position: relative;
+    top: -290px;
+    width: 369.8px;
+    height: 310px;
+    left: 389.8px;
+
+}
+#zhuanyonglianjie-span{
+    position: relative;
+    left: 135px;
+    top: -55px;
+    font-size: 28px;
+}
+#zhuanyonglianjie img{
+    position: relative;
+    left: 25px;
+    top: 80px;
+}
+#zhuanyonglianjie-dd1{
+    position: relative;
+    top: 85px;
+    left: -20px;
+    text-align: center; 
+}
+#zhuanyonglianjie a{
+    position: relative;
+    left: 140px;
+    top: 120px;
+    text-decoration: none;
+    color: #0078db;
+}
+#zhuanyonglianjie a:hover{
+    text-decoration: underline;
+}
+#ASE{
+    background-color: white;
+    position: relative;
+    top: -600px;
+    width: 369.8px;
+    height: 310px;
+    left: 759.6px;
+
+}
+#ASE-span{
+    position: relative;
+    left: 85px;
+    top: -55px;
+    font-size: 28px;
+}
+#ASE img{
+    position: relative;
+    left: -80px;
+    top: 80px;
+}
+#ASE-dd1{
+    position: relative;
+    top: 85px;
+    left: -20px;
+    text-align: center; 
+}
+#ASE a{
+    position: relative;
+    left: 130px;
+    top: 100px;
+    text-decoration: none;
+    color: #0078db;
+}
+#ASE a:hover{
+    text-decoration: underline;
+}
+#ADs{
+    background-color: white;
+    position: relative;
+    top: -910px;
+    width: 369.8px;
+    height: 310px;
+    left: 1129.4px;
+
+}
+#ADs-span{
+    position: relative;
+    left: 85px;
+    top: -55px;
+    font-size: 28px;
+}
+#ADs img{
+    position: relative;
+    left: -80px;
+    top: 80px;
+}
+#ADs-dd1{
+    position: relative;
+    top: 85px;
+    left: -20px;
+    text-align: center; 
+}
+#ADs a{
+    position: relative;
+    left: 130px;
+    top: 100px;
+    text-decoration: none;
+    color: #0078db;
+}
+#ADs a:hover{
+    text-decoration: underline;
+}
+#xialaanniu{
+    font-size: 30px;
+    color: #0078db ;
+    position: relative;
+    left: 600px;
+    top: -900px;
+
+}
+#xialaanniu i{
+    font-size: 50px;
+    position: relative;
+    left: 90px;
+}
+/*第二个*/
+#yunchanpin2{
+    position: relative;
+    top: 1391px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 1519.2px;
+    height: 330px;
+    display: none;
+}
+#xuniji-1{
+    background-color: white;
+    position: relative;
+    top: 0px;
+    width: 369.8px;
+    height: 310px;
+    left: 20px;
+}
+#xuniji-1-span{
+    position: relative;
+    left: 135px;
+    top: -55px;
+    font-size: 28px;
+}
+#xuniji-1 img{
+    position: relative;
+    left: 20px;
+    top: 80px;
+}
+#xuniji-1-dd1{
+    position: relative;
+    top: 85px;
+    left: -20px;
+    text-align: center; 
+}
+#xuniji-1 a{
+    position: relative;
+    left: 130px;
+    top: 100px;
+    text-decoration: none;
+    color: #0078db;
+}
+#xuniji-1 a:hover{
+    text-decoration: underline;
+}
+#yunfuwu-1{
+    background-color: white;
+    position: relative;
+    top: -310px;
+    width: 369.8px;
+    height: 310px;
+    left: 389.8px;
+}
+#yunfuwu-1-span{
+    position: relative;
+    left: 135px;
+    top: -55px;
+    font-size: 28px;
+}
+#yunfuwu-1 img{
+    position: relative;
+    left: 20px;
+    top: 80px;
+}
+#yunfuwu-1-dd1{
+    position: relative;
+    top: 85px;
+    left: -20px;
+    text-align: center; 
+}
+#yunfuwu-1 a{
+    position: relative;
+    left: 130px;
+    top: 100px;
+    text-decoration: none;
+    color: #0078db;
+}
+#yunfuwu-1 a:hover{
+    text-decoration: underline;
+}
+
+/*看看谁在使用Azure*/
+#img{
+    position: relative;
+    top: 1500px;
+    left: -10px;
+}
+h1{
+    position: relative;
+    top: 1130px;
+    left: 575px;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+/*地区*/
+#img-1{
+    position: relative;
+    top: 1450px;
+    left: 120px;
+}
+#diqu{
+    position: relative;
+    top: 1440px;
+    font-size: 40px;
+    left: 575px;
+}
+#diqu-1{
+    position: relative;
+    left: 500px;
+    top: 1450px;
+}
+
+
+/*分界线*/
+#fenjie{
+    width: 1546px;
+    height: 54px;
+    position: relative;
+    top: 1480px;
+    left: -10px;
+    background-color: #000000;
+}
+#fenjie ul li{
+    color: white;
+    float: left;
+    margin-right: 250px;
+    margin-top: 15px;
+}
+#fenjie ul li a{
+    color: white;
+}
+#fenjie ul li a:hover{
+    color:#0078db ;
+}
+#fenjie ul li:hover{
+    color:#0078db ;
+}
+
+/*footer*/
+#footer{
+    width: 1546px;
+    height: 486px;
+    background-color: #1a1a1a;
+    position: relative;
+    top: 1455px;
+    left: -10px;
+    margin-bottom: 0px;
+}
+#h6{
+    color:#a9a9a9;
+    font-weight: lighter;
+    position: relative;
+    left: 15px;
+    top: 38px;
+}
+#qrcode1{
+    position: relative;
+    top: 38px;
+    left: 15px;
+}
+#h6-1{
+    position: relative;
+    left: 15px;
+    top: 45px;
+    color:#a9a9a9;
+    font-weight: lighter;
+}
+#qrcode2{
+    position: relative;
+    top: 38px;
+    left: 15px;
+}
+#h6-2{
+    position: relative;
+    left: 430px;
+    top: -345px;
+    color:#a9a9a9;
+    font-weight: lighter;
+}
+
+#footer-ul-1 li{
+    position: relative;
+    left: 376px;
+    top: -353px;
+    list-style: none;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 13px;
+}
+#footer-ul-1 li a{
+    color: white;
+}
+#footer-ul-1 li a:hover{
+    color: #0078db;
+}
+
+#h6-3{
+    position: relative;
+    left: 805px;
+    top: -690px;
+    color:#a9a9a9;
+    font-weight: lighter;
+}
+
+#footer-ul-2 li{
+    position: relative;
+    left: 752px;
+    top: -695px;
+    list-style: none;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 13px;
+}
+#footer-ul-2 li a{
+    color: white;
+}
+#footer-ul-2 li a:hover{
+    color: #0078db;
+}
+
+
+#h6-4{
+    position: relative;
+    left: 1180px;
+    top: -1033px;
+    color:#a9a9a9;
+    font-weight: lighter;
+}
+
+#footer-ul-3 li{
+    position: relative;
+    left: 1128px;
+    top: -1040px;
+    list-style: none;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 13px;
+}
+#footer-ul-3 li a{
+    color: white;
+}
+#footer-ul-3 li a:hover{
+    color: #0078db;
+}
+
+
+#h6-5{
+    position: relative;
+    left: 1180px;
+    top: -1033px;
+    color:#a9a9a9;
+    font-weight: lighter;
+}
+
+#footer-ul-4 li{
+    position: relative;
+    left: 1128px;
+    top: -1040px;
+    list-style: none;
+    font-size: 10px;
+    font-weight: 500;
+    margin: 13px;
+}
+#footer-ul-4 li a{
+    color: white;
+}
+#footer-ul-4 li a:hover{
+    color: #0078db;
+}
+
+#footer-img{
+    position: relative;
+    left: 0px;
+    top: -965px;
+    left: 1200px;
+}
+
+#language i{
+    margin-right: 15px;
+    font-size: 25px;
+    margin-left: 15px;
+    position: relative;
+    top: 3px;
+}
+#language{
+    position: relative;
+    top: -980px;
+    left: -230px;
+    font-weight: 500;
+    font-size: 13px;
+    margin: -100px;
+    color: white;
+}
+#fangwen{
+    position: relative;
+    left: -70px;
+    top:-980px ;
+    font-weight: 500;
+    font-size: 13px;
+}
+#fangwen a{
+    color: white;
+}
+#fangwen a:hover{
+    color:  #0078db;
+}
+#hu{
+    position: relative;
+    top: -980px;
+    font-weight: 500;
+    font-size: 13px;
+}
+#hu a{
+    color: white;
+}
+#hu a:hover{
+    color:  #0078db;
+}
+
+#gongwang{
+    position: relative;
+    top: -980px;
+    left: 50px;
+}
+#gongwang a{
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+#gongwang a:hover{
+    color:  #0078db;
+}
+#gongwang img{
+    position: relative;
+    top: 7px;
+}
+#yinsi1{
+    position: relative;
+    top: -980px;
+    left: 100px;
+}
+#yinsi1 a{
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+#yinsi1 a:hover{
+    color: #0078db;
+}

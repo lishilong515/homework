@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Azure中文网</title>
+        <link rel="stylesheet" type="text/css" href="Azure.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--搭建顶部导航栏-->
+        <div class="top-bar">
+            <a href="https://www.azure.cn/"><img src="1.png"></a>
+            <svg t="1606988215415" id="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1479" width="23" height="23"><path d="M469.344 789.344c176.736 0 320-143.264 320-320s-143.264-320-320-320-320 143.264-320 320 143.264 320 320 320z m296.864-44.032l136.704 139.936a42.656 42.656 0 0 1-61.056 59.616l-140.096-143.424a403.488 403.488 0 0 1-232.416 73.216C245.44 874.656 64 693.216 64 469.344S245.472 64 469.344 64c223.84 0 405.312 181.472 405.312 405.344 0 106.592-41.152 203.584-108.448 275.968z" p-id="1480" ></path></svg>
+            <a href="https://login.partner.microsoftonline.cn/organizations/oauth2/v2.0/authorize?client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.chinacloudapi.cn%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3DxDMlvoPTo2fTDATozQ6gxlJ6E09ncah4leAzjQOlwlFmx52qMBi_bop20xNznJwDI9cN2TWBSjH5OUxFzo8EcfACkqwpdlHz5G1mMibT8FHVAzwad_ONeG-rJriLVmk5_rBbXECYY1ZmcxTxG93H-8P7yHJedp39MdrnSAF_0LGf4Vg7CsFsNuIYxqyrbfE5nZ5PZuOYblBmFlSukUgPmziHI_A9dDZ5WUxNWhcXmfcmOCwQq_T48lIQsLP9UGkK&response_mode=form_post&nonce=637429377155712253.NjUyYTJmZGYtZmMxNS00MzJkLThmMzEtNjZhODRlMjkyOTA4ZDBiMmM5ZWQtODdlNi00ODZlLWJlMzctNDBhNTZmODIzM2Iz&redirect_uri=https%3A%2F%2Fportal.azure.cn%2Fsignin%2Findex%2F&site_id=501430&msafed=0&client-request-id=938df0c4-5d0a-416f-9e21-c721105a6771&x-client-SKU=ID_NET45&x-client-ver=5.3.0.0" class="sign-up"><font style="font-size: small;">登录Azure门户</font></a>
+        </div>
+        <!--搜索框-->
+        <div id="search-box"><input id="search-inp" placeholder="请输入关键词"><button><i class="fa fa-search"></i></button></div>
+        <script>
+            $(function(){
+                $("#icon").click(function(){
+                    $("#search-box").show();
+
+                });
+            })
+        </script>
+        <!--搭建顶部列表和下拉框-->
+        <div class="top-list">
+            <ul class="top-ul">
+                <li id="renshi-Azure">
+                    <a href="#" id="one">认识 Azure</a>
+                     <!--搭建第一个下拉菜单-->
+                     <div class="know-Azure">
+                      <div id="what-is-Azure">
+                            <a href="https://updates.azure.cn/what-is-azure/" id="what-is-Azure-a">什么是 Azure?</a>
+                            <dd id="what-is-Azure-dd"><a href="https://updates.azure.cn/what-is-azure/">了解 Azure 服务基础知识</a></dd>
+                      </div>
+                      <div id="china-vs-globe">
+                           <a href="https://www.microsoft.com/china/azure/" id="china-vs-globe-a">中国版 Azure（世纪互联运营）vs. 全球版 Azure</a>
+                           <dd id="china-vs-globe-dd"><a href="https://www.microsoft.com/china/azure/">哪种公有云最适合你？</a></dd>
+                      </div>
+                      <div id="Azure-service">
+                       <a href="https://azure.microsoft.com/zh-cn/global-infrastructure/services/?products=all&regions=china-non-regional,china-north,china-north-2,china-east,china-east-2" id="Azure-service-a">Azure 可用服务</a>
+                       <dd id="Azure-service-dd"><a href="https://azure.microsoft.com/zh-cn/global-infrastructure/services/?products=all&regions=china-non-regional,china-north,china-north-2,china-east,china-east-2https://updates.azure.cn/what-is-azure/">Azure 中国可用服务列表</a></dd>
+                      </div>
+                     </div>
+                </li>
+                <li id="chanpin">
+                    <a href="#" id="two">产品</a>
+                    <!--搭建第二个下拉菜单-->
+                    <div class="product">
+                        <ul class="product1">
+                        <a href="#">
+                            <li><span>AI<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单的AI拓展菜单-->
+                            <div class="AI-tuozhan">
+                                    <div id="know-service">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/" id="know-service-a">认知服务</a>
+                                        <dd id="know-service-dd"><a href="//azure.microsoft.com/zh-cn/services/cognitive-services/">添加智能API功能以启用上下文交互</a></dd>
+                                    </div>
+                                    <div id="face-recognition">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/face/" id="face-recognition-a">人脸识别</a>
+                                        <dd id="face-recognition-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/face/">检测、识别、分析、组织和标记照片中的人脸</a></dd>
+                                    </div>
+                                    <div id="computer-sight">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/computer-vision/" id="computer-sight-a">计算机视觉</a>
+                                        <dd id="computer-sight-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/computer-vision/">从图像中提取可操作信息</a></dd>
+                                    </div>
+                                    <div id="content-shencha">
+                                        <a href="https://azure.microsoft.com/services/cognitive-services/content-moderator/" id="content-shencha-a">内容审查器</a>
+                                        <dd id="content-shencha-dd"><a href="https://azure.microsoft.com/services/cognitive-services/content-moderator/">计算机辅助内容审查器 API以及用于图像、文本和视频的人工审查工具</a></dd>
+                                    </div>
+                                    <div id="text-fenxi">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/ext-analytics/" id="text-fenxi-a">文本分析</a>
+                                        <dd id="text-fenxi-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/ext-analytics/">检测文本中的情绪、关键短语和语言</a></dd>
+                                    </div>
+                                    <div id="text-translation">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/translator/" id="text-translation-a">文本翻译</a>
+                                        <dd id="text-translation-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/translator/">通过简单的 REST API的调用即可轻松进行实时文本翻译</a></dd>
+                                    </div>
+                                    <div id="language-understanding">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/language-understanding-intelligent-service/" id="language-understanding-a">语言理解</a>
+                                        <dd id="language-understanding-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/language-understanding-intelligent-service/">教会应用理解用户的指令</a></dd>
+                                    </div>
+                                    <div id="yuyinfuwu">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/speech-services/" id="yuyinfuwu-a">语音服务</a>
+                                        <dd id="yuyinfuwu-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/speech-services/">将语音转换为文本，将文本转换为自然语音</a></dd>
+                                    </div>
+                                    <div id="Metrics-Advisor">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/" id="Metrics-Advisor-a">Metrics Advisor</a>
+                                        <dd id="Metrics-Advisor-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/">主动监视指标和诊断问题的 AI 分析服务</a></dd>
+                                    </div>
+                                    <div id="Azure-recognition">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/" id="Azure-recognition-a">Azure 认知搜索</a>
+                                        <dd id="Azure-recognition-dd"><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/">用于移动和 Web应用开发的 AI支持的云搜索服务</a></dd>
+                                    </div>
+                                    <div id="robot-learning">
+                                        <a href="https://azure.microsoft.com/zh-cn/services/machine-learning/" id="robot-learning-a">机器学习</a>
+                                        <dd id="robot-learning-dd"><a href="https://azure.microsoft.com/zh-cn/services/machine-learning/">构建和训练模型，并将其从云端部署到边缘</a></dd>
+                                    </div>
+
+
+                            </div></li>
+                        </a>
+                        <a href="#"><li><span>Azure Stack<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下Azure Stack的拓展菜单-->
+                            <div class="Azure-Stack-tuozhan">
+                                <div id="Azure-Stack">
+                                    <a href="https://azure.microsoft.com/zh-cn/overview/azure-stack/" id="Azure-Stack-a">Azure Stack</a>
+                                    <dd id="Azure-Stack-dd"><a href="https://azure.microsoft.com/zh-cn/overview/azure-stack/">Azure Stack 是 Azure的扩展 —将云计算的敏捷性和创新性带入您的本地环境，实现唯一的混合云，从而允许您在任何地方构建和部署混合应用程序。我们汇集了最佳的边缘和云，在您环境中的任何地方提供Azure服务。</a></dd>
+                                </div>
+                            </div></li>
+                        </a>
+                        <a href="#"><li><span>安全性<i class="fa fa-angle-right"></i></span>
+                            <div class="anquanxing-tuozhan">
+                                <div id="secret-key">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/key-vault/" id="secret-key-a">密钥保管库</a>
+                                    <dd id="secret-key-dd"><a href="https://azure.microsoft.com/zh-cn/services/key-vault/">保护并保持控制密钥和机密</a></dd>
+                                </div>
+                                
+                                <div id="Azure-Active-Directory">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/active-directory/" id="Azure-Active-Directory-a">Azure Active Directory</a>
+                                    <dd id="Azure-Active-Directory-dd"><a href="https://azure.microsoft.com/zh-cn/services/active-directory/">同步本地目录并启用单一登录</a></dd>
+                                </div>
+                                <div id="programing">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/application-gateway/" id="programing-a">应用程序网关</a>
+                                    <dd id="programing-dd"><a href="https://azure.microsoft.com/zh-cn/services/application-gateway/">在 Azure中生成安全、可缩放且高度可用的Web 前端</a></dd>
+                                </div>
+                                <div id="web-wall">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/web-application-firewall/" id="web-wall-a">Azure Web应用程序防火墙</a>
+                                    <dd id="web-wall-dd"><a href="https://azure.microsoft.com/zh-cn/services/web-application-firewall/">在 Azure中生成安全、可缩放且高度可用的Web 前端</a></dd>
+                                </div>
+                                <div id="vpn">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/web-application-firewall/" id="vpn-a">VPN网关</a>
+                                    <dd id="vpn-dd"><a href="https://azure.microsoft.com/zh-cn/services/web-application-firewall/">创建完全的跨界链接</a></dd>
+                                </div>
+                                <div id="anquan-center">
+                                    <a href="https://azure.microsoft.com/en-us/services/security-center/" id="anquan-center-a">安全中心</a>
+                                    <dd id="anquan-center-dd"><a href="https://azure.microsoft.com/en-us/services/security-center/">跨混合云工作负荷统一安全管理并实现高级威胁防护</a></dd>
+                                </div>
+                                <div id="information-protection">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/information-protection/" id="information-protection-a">Azure 信息保护</a>
+                                    <dd id="information-protection-dd"><a href="https://azure.microsoft.com/zh-cn/services/information-protection/">随时随地更好地保护敏感信息</a></dd>
+                                </div>
+                                <div id="yu">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/active-directory-ds/" id="yu-a">Azure Active Directory 域服务</a>
+                                    <dd id="yu-dd"><a href="https://azure.microsoft.com/zh-cn/services/active-directory-ds/">用于虚拟机和目录感知应用程序的域服务</a></dd>
+                                </div>
+
+
+                            </div></li>
+                        </a>
+                        <a href="#"><li><span>标识<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下标识的拓展菜单-->
+                            <div class="biaoshi-tuozhan">
+                                <div id="A">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/active-directory/" id="A-a">Azure Active Directory</a>
+                                    <dd id="A-dd"><a href="https://azure.microsoft.com/zh-cn/services/active-directory/">同步本地目录并启用单一登录</a></dd>
+                                </div>
+                                <div id="B">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/active-directory/external-identities/b2c/" id="B-a">Azure Active Directory B2C</a>
+                                    <dd id="B-dd"><a href="https://azure.microsoft.com/zh-cn/services/active-directory/external-identities/b2c/">云中的客户标识和访问管理</a></dd>
+                                </div>
+                                <div id="ID">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/active-directory/" id="ID-a">多重身份验证</a>
+                                    <dd id="ID-dd"><a href="https://azure.microsoft.com/zh-cn/services/active-directory/">提高数据和应用的安全性，而不给用户添麻烦</a></dd>
+                                </div>
+                                <div id="information-protection-1">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/information-protection/" id="information-protection-1-a">Azure 信息保护</a>
+                                    <dd id="information-protection-1-dd"><a href="https://azure.microsoft.com/zh-cn/services/information-protection/">随时随地更好地保护敏感信息</a></dd>
+                                </div>
+                                <div id="yu-1">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/active-directory-ds/" id="yu-1-a">Azure Active Directory 域服务</a>
+                                    <dd id="yu-1-dd"><a href="https://azure.microsoft.com/zh-cn/services/active-directory-ds/">用于虚拟机和目录感知应用程序的域服务</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>存储<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下储存的拓展菜单 -->
+                            <div class="chucun-tuozhan">
+                                <div id="chucun">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/storage/" id="chucun-a">储存</a>
+                                    <dd id="chucun-dd"><a href="https://azure.microsoft.com/zh-cn/services/storage/">持久的、高度可用的、高度可伸缩的云存储器</a></dd>
+                                </div>
+                                <div id="blob">
+                                    <a href="https://azure.microsoft.com/services/storage/blobs/" id="blob-a">Blob 储存</a>
+                                    <dd id="blob-dd"><a href="https://azure.microsoft.com/services/storage/blobs/">适用于非结构化数据的基于REST 的对象存储</a></dd>
+                                </div>
+                                <div id="S">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/storage/data-lake-storage/" id="S-a">Azure Data Lake Storage</a>
+                                    <dd id="S-dd"><a href="https://azure.microsoft.com/zh-cn/services/storage/data-lake-storage/">基于 Azure Blob存储构建的高度可缩放的安全Data Lake 功能</a></dd>
+                                </div>
+                                <div id="cipan">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/storage/disks/" id="cipan-a">磁盘储存</a>
+                                    <dd id="cipan-dd"><a href="https://azure.microsoft.com/zh-cn/services/storage/disks/">支持虚拟机的永久性、安全磁盘选项</a></dd>
+                                </div>
+                                <div id="tuoguan">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/storage/disks/" id="tuoguan-a">磁盘托管</a>
+                                    <dd id="tuoguan-dd"><a href="https://azure.microsoft.com/zh-cn/services/storage/disks/">用于 Azure虚拟机的永久且安全的磁盘存储</a></dd>
+                                </div>
+                                <div id="line">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/storage/queues/" id="line-a">队列储存</a>
+                                    <dd id="line-dd"><a href="https://azure.microsoft.com/zh-cn/services/storage/queues/">根据流量有效缩放应用程序</a></dd>
+                                </div>
+                                <div id="doc">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/storage/files/" id="doc-a">文件储存</a>
+                                    <dd id="doc-dd"><a href="https://azure.microsoft.com/zh-cn/services/storage/files/">使用标准 SMB 3.0协议的文件共享</a></dd>
+                                </div>
+                                <div id="DB">
+                                   <a href="https://azure.microsoft.com/zh-cn/services/databox/" id="DB-a">Date Box</a>
+                                    <dd id="DB-dd"><a href="https://azure.microsoft.com/zh-cn/services/databox/">用于向 Azure 的数据传输以及用于边缘计算的设备和解决方案</a></dd>
+                                </div>
+                                
+                            
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>分析<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下分析的拓展菜单-->
+                            <div class="analyse-tuozhan">
+                                
+                                <div id="SQ">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/synapse-analytics/" id="SQ-a">SQL 数据仓库</a>
+                                    <dd id="SQ-dd"><a href="https://azure.microsoft.com/zh-cn/services/synapse-analytics/">弹性数据仓库即服务，具有企业级功能
+                                    </a></dd>
+                                </div>
+                                
+                                <div id="HD-insight">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/hdinsight/" id="HD-insight-a">HD insight</a>
+                                    <dd id="HD-insight-dd"><a href="https://azure.microsoft.com/zh-cn/services/hdinsight/">设置云 Hadoop、Spark、R Server、HBase和 Storm 群集</a></dd>
+                                </div>
+                                <div id="liu">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/stream-analytics/" id="liu-a">流分析</a>
+                                    <dd id="liu-dd"><a href="https://azure.microsoft.com/zh-cn/services/stream-analytics/">实时数据流式处理，可处理来自数百万台IoT 设备的数据</a></dd>
+                                </div>
+                                <div id="PB">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/power-bi-embedded/" id="PB-a">Power BI Embedded </a>
+                                    <dd id="PB-dd"><a href="https://azure.microsoft.com/zh-cn/services/power-bi-embedded/">在应用程序中嵌入完整交互式的可视化数据</a></dd>
+                                </div>
+                                <div id="A-service">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/analysis-services/" id="A-service-a">Azure 分析服务</a>
+                                    <dd id="A-service-dd"><a href="https://azure.microsoft.com/zh-cn/services/analysis-services/">企业级分析引擎即服务</a></dd>
+                                </div>
+                                <div id="shijian-center">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/event-hubs/" id="shijian-center-a">事件中心</a>
+                                    <dd id="shijian-center-dd"><a href="https://azure.microsoft.com/zh-cn/services/event-hubs/">从数百万个设备中接收遥测</a></dd>
+                                </div>
+                                <div id="date">
+                                    <a href="https://azure.microsoft.com/services/data-factory/" id="date-a">数据工厂</a>
+                                    <dd id="date-dd"><a href="https://azure.microsoft.com/services/data-factory/">轻松进行企业级规模混合数据集成</a></dd>
+                                </div>
+                                <div id="A-guanli">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/data-explorer/" id="A-guanli-a">Azure 数据资源管理器</a>
+                                    <dd id="A-guanli-dd"><a href="https://azure.microsoft.com/zh-cn/services/data-explorer/">快速且高度可缩放的数据探索服务</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>管理工具<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下管理工具的拓展菜单-->
+                            <!--接下来的这些拓展菜单只做三个项，它实在太多了，而且是量产型，不需要思考直接套模板，但是浪费时间-->
+                            <div class="guanli-tool-tuozhan">
+                                <div id="gate">
+                                    <a href="https://azure.microsoft.com/zh-cn/features/azure-portal/" id="gate-a">Azure 门户</a>
+                                    <dd id="gate-dd"><a href="https://azure.microsoft.com/zh-cn/features/azure-portal/">在单个统一的控制台中生成、管理和监视Azure产品</a></dd>
+                                </div>
+                                <div id="guwen">
+                                    <a href="https://azure.microsoft.com/en-us/services/advisor/" id="guwen-a">Azure 顾问</a>
+                                    <dd id="guwen-dd"><a href="https://azure.microsoft.com/en-us/services/advisor/">个性化 Azure最佳实践推荐引擎</a></dd>
+                                </div>
+                                <div id="zidonghua">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/automation/" id="zidonghua-a">自动化</a>
+                                    <dd id="zidonghua-dd"><a href="https://azure.microsoft.com/zh-cn/services/automation/">使用流程自动化来简化云管理</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>集成<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下集成的拓展菜单-->
+                            <div class="jicheng-tuozhan">
+                                <div id="Z">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/service-bus/" id="Z-a">服务总线</a>
+                                    <dd id="Z-dd"><a href="https://azure.microsoft.com/zh-cn/services/service-bus/">在私有云环境和公有云环境中连接</a></dd>
+                                </div>
+                                <div id="API-guanli">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/api-management/" id="APIguanli-a">API 管理</a>
+                                    <dd id="API-guanli-dd"><a href="https://azure.microsoft.com/zh-cn/services/api-management/">安全、大规模地向开发人员、合作伙伴和员工发布 API</a></dd>
+                                </div>
+                                <div id="shijian-net">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/event-grid/" id="shijian-net-a">事件网络</a>
+                                    <dd id="shijian-net-dd"><a href="https://azure.microsoft.com/zh-cn/services/event-grid/">实现大规模的可靠事件交付</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>计算<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下计算的拓展菜单-->
+                            <div class="jisuan-tuozhan">
+                                <div id="xuniji">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/virtual-machines/" id="xuniji-a">虚拟机</a>
+                                    <dd id="xuniji-dd"><a href="https://azure.microsoft.com/zh-cn/services/virtual-machines/">在几秒钟内预配好 Windows和 Linux 虚拟机</a></dd>
+                                </div>
+                                <div id="J">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/virtual-machine-scale-sets/" id="J-a">虚拟机规模集</a>
+                                    <dd id="J-dd"><a href="https://azure.microsoft.com/zh-cn/services/virtual-machine-scale-sets/">管理并扩展到数千台Linux 和 Windows 虚拟机</a></dd>
+                                </div>
+                                <div id="app">
+                                    <a href="https://azure.microsoft.com/services/app-service/" id="app-a">应用服务</a>
+                                    <dd id="app-dd"><a href="https://azure.microsoft.com/services/app-service/">快速创建适用于 Web和移动的强大云应用</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>联网<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下联网的拓展菜单-->
+                            <div class="lianwang-tuozhan">
+                                <div id="CDN">
+                                    <a href="https://www.azure.cn/home/features/cdn/" id="CDN-a">CDN内容分发网络</a>
+                                    <dd id="CDN-dd"><a href="https://www.azure.cn/home/features/cdn/">广泛的覆盖可确保安全、可靠的内容交付</a></dd>
+                                </div>
+                                <div id="ER">
+                                    <a href="https://www.azure.cn/home/features/expressroute/" id="ER-a">ExpressRoute</a>
+                                    <dd id="ER-dd"><a href="https://www.azure.cn/home/features/expressroute/">Azure 专用网络光纤连接</a></dd>
+                                </div>
+                                <div id="AD">
+                                    <a href="https://azure.microsoft.com/en-us/services/dns/" id="AD-a">Azure DNS </a>
+                                    <dd id="AD-dd"><a href="https://azure.microsoft.com/en-us/services/dns/">在 Azure DNS 中托管 DNS 域</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>媒体<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下媒体的拓展菜单-->
+                            <div class="meiti-tuozhan">
+                                <div id="M">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/media-services/" id="M-a">媒体服务</a>
+                                    <dd id="M-dd"><a href="https://azure.microsoft.com/zh-cn/services/media-services/">大规模编码、存储和流式传输视频和音频</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>迁移<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下迁移的拓展菜单-->
+                            <div class="qianyi-tuozhan">
+                                <div id="zhandian">
+                                    <a href="https://azure.microsoft.com/services/site-recovery/" id="zhandian-a">站点恢复</a>
+                                    <dd id="zhandian-dd"><a href="https://azure.microsoft.com/services/site-recovery/">安排私有云的保护和恢复</a></dd>
+                                </div>
+                                <div id="date-qianyi">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/database-migration/" id="date-qianyi-a">Azure 数据库迁移服务</a>
+                                    <dd id="date-qianyi-dd"><a href="https://azure.microsoft.com/zh-cn/services/database-migration/">简化本地数据库向云的迁移</a></dd>
+                                </div>
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>容器<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下容器的拓展菜单-->
+                            <div class="rongqi-tuozhan">
+                                <div id="SF">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/service-fabric/" id="SF-a">Service Fabric</a>
+                                    <dd id="SF-dd"><a href="https://azure.microsoft.com/zh-cn/services/service-fabric/">在 Windows 或 Linux上开发微服务和安排容器</a></dd>
+                                </div>
+                                <div id="biao">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/container-registry/" id="biao-a">容器注册表</a>
+                                    <dd id="biao-dd"><a href="https://azure.microsoft.com/zh-cn/services/container-registry/">将 Docker专用注册表作为一流的Azure 资源进行管理</a></dd>
+                                </div>
+                                <div id="pi">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/batch/" id="pi-a">批处理</a>
+                                    <dd id="pi-dd"><a href="https://azure.microsoft.com/zh-cn/services/batch/">云规模的作业计划和计算管理</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>数据库<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下数据库的拓展菜单-->
+                            <div class="shujuku-tuozhan">
+                                <div id="SQLshuju">
+                                    <a href="https://azure.microsoft.com/services/sql-database/" id="SQLshuju-a">SQL数据库</a>
+                                    <dd id="SQLshuju-dd"><a href="https://azure.microsoft.com/services/sql-database/">托管关系SQL数据库即服务</a></dd>
+                                </div>
+                                <div id="SQLshujucangku">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/batch/" id="SQLshujucangku-a">SQL数据仓库</a>
+                                    <dd id="SQLshujucangku-dd"><a href="https://azure.microsoft.com/zh-cn/services/batch/">弹性数据仓库即服务，具有企业级功能</a></dd>
+                                </div>
+                                <div id="SSSD">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/sql-server-stretch-database/" id="SSSD-a">SQL Server Stretch Database</a>
+                                    <dd id="SSSD-dd"><a href="https://azure.microsoft.com/zh-cn/services/sql-server-stretch-database/">将本地 SQL Server数据库动态拉伸到 Azure</a></dd>
+                                </div>
+
+
+                        </div></li>
+                    </a>
+                        <a href="#"><li><span>网站<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个数据库下网站的拓展菜单-->
+                            <div class="wangzhan-tuozhan">
+                                <div id="ASRservice">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/signalr-service/" id="ASRservice-a">Azure SignalR 服务</a>
+                                    <dd id="ASRservice-dd"><a href="https://azure.microsoft.com/zh-cn/services/signalr-service/">轻松添加实时 Web 功能</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>物联网<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下物联网的拓展-->
+                            <div class="wulianwang-tuozhan">
+                                <div id="ATcenter">
+                                    <a href="https://azure.microsoft.com/services/iot-hub/" id="ATcenter-a">Azure IoT 中心</a>
+                                    <dd id="ATcenter-dd"><a href="https://azure.microsoft.com/services/iot-hub/">连接、监视并控制数十亿IoT 资产</a></dd>
+                                </div>
+                                <div id="ATbianyuan">
+                                    <a href="https://azure.microsoft.com/services/iot-edge/" id="ATbianyuan-a">Azure IoT 边缘</a>
+                                    <dd id="ATbianyuan-dd"><a href="https://azure.microsoft.com/services/iot-edge/">将云智能和分析扩展到边缘设备</a></dd>
+                                </div>
+                                <div id="ACDB">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/cosmos-db/" id="ACDB-a">Azure Cosmos DB</a>
+                                    <dd id="ACDB-dd"><a href="https://azure.microsoft.com/zh-cn/services/cosmos-db/">任何规模的分布式多模型数据库服务</a></dd>
+                                </div>
+
+
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>移动<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下移动的拓展-->
+                            <div class="yidong-tuozhan">
+                                <div id="tongzhicenter">
+                                    <a href="tongzhicenterhttps://azure.microsoft.com/zh-cn/services/notification-hubs/" id="tongzhicenter-a">通知中心</a>
+                                    <dd id="tongzhicenter-dd"><a href="tongzhicenterhttps://azure.microsoft.com/zh-cn/services/notification-hubs/">从任何后端向任何平台发送推送通知</a></dd>
+                                </div>
+                                <div id="yidongapp">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/app-service/mobile/" id="yidongapp-a">移动应用</a>
+                                    <dd id="yidongapp-dd"><a href="https://azure.microsoft.com/zh-cn/services/app-service/mobile/">构建和承载任何移动应用的后端</a></dd>
+                                </div>
+                                <div id="APIapp">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/app-service/api/" id="APIapp-a">API应用</a>
+                                    <dd id="APIapp-dd"><a href="https://azure.microsoft.com/zh-cn/services/app-service/api/">轻松生成和使用云API</a></dd>
+                                </div>
+                            </div></li>
+                    </a>
+                        <a href="#"><li><span>开发人员工具<i class="fa fa-angle-right"></i></span>
+                            <!--搭建第二个下拉菜单下开发者人员工具的拓展菜单-->
+                            <div class="kaifazhe-tuozhan">
+                                <div id="kaifachengxu">
+                                    <a href="https://azure.microsoft.com/zh-cn/services/app-configuration/" id="kaifachengxu-a">应用程序配置</a>
+                                    <dd id="kaifachengxu-dd"><a href="https://azure.microsoft.com/zh-cn/services/app-configuration/">用于应用程序配置的快速、可缩放的参数存储</a></dd>
+                                </div>
+                            </div></li>
+                    </a>
+                        </ul>
+                    </div>
+                </li>
+            <!--第二个下拉菜单搭建完成-->
+
+
+
+                <li><a href="#" class="three">价格</a></li>
+                <li><a href="#" class="three">解决方案</a></li>
+                <li><a href="#" class="three">案例与伙伴</a>
+                    <!--搭建第三个下拉菜单-->
+                    <div class="anliyuhuoban">
+                        <div id="anliyanjiu">
+                            <a href="https://customers.azure.cn/" id="anliyanjiu-a">案例研究</a>
+                            <dd id="anliyanjiu-dd"><a href="https://customers.azure.cn/">人们正在使用 Azure做着令人惊叹的事，来听听他们的故事吧</a></dd>
+                      </div>
+                      <div id="huoban">
+                           <a href="https://www.microsoft.com/zh-cn/solution-providers/home" id="huoban-a">寻找合作伙伴</a>
+                           <dd id="huoban-dd"><a href="https://www.microsoft.com/zh-cn/solution-providers/home">通过经验丰富的合作伙伴的帮助在云中启动并运行业务</a></dd>
+                      </div>
+
+                    </div>
+                
+                
+                </li>
+                <!--第三个下拉菜单完成-->
+                <li><a href="#" class="three">文档</a>
+                    <!--搭建第四个下拉菜单-->
+                    <div class="wendang">
+                        <ul class="wendang1">
+                            <a href="#">
+                                <li><span>技术文档<i class="fa fa-angle-right"></i></span>
+                                    <!--搭建第四个下拉菜单下技术文档的拓展菜单-->
+                                    <div class="jishuwendang-tuozhan">
+                                        <div id="jishuwendang">
+                                            <a href="https://docs.azure.cn" id="jishuwendang-a">技术文档</a>
+                                            <dd id="jishuwendang-dd"><a href="https://docs.azure.cn">了解如何使用 Azure云服务构建和管理功能强大的应用程序；获取文档、示例代码、教程等</a></dd>
+                                      </div>
+
+
+                                    </div></li>
+                            </a>
+                            <a href="#">
+                                <li><span>购买 + 计费<i class="fa fa-angle-right"></i></span>
+                                    <!--搭建第四个下拉菜单下购买+计费的拓展-->
+                                    <div class="goumai-tuozhan">
+                                        <div id="zhongguoqu">
+                                            <a href="https://docs.azure.cn/zh-cn/articles/azure-china-purchasing-guidance/" id="zhongguoqu-a">中国区购买 Azure 指南</a>
+                                            <dd id="zhongguoqu-dd"><a href="https://docs.azure.cn/zh-cn/articles/azure-china-purchasing-guidance/">了解不同渠道端到端的购买流程，及详细的指导说明</a></dd>
+                                      </div>
+                                      <div id="quanqiucaigou">
+                                        <a href="https://docs.azure.cn/articles/azure-global-purchasing-guidance/" id="quanqiucaigou-a">Azure 全球采购指南</a>
+                                        <dd id="quanqiucaigou-dd"><a href="https://docs.azure.cn/articles/azure-global-purchasing-guidance/">为考虑使用 Azure海外服务的中国用户提供购买流程概述</a></dd>
+                                  </div>
+
+                                  <div id="zhongguojifei">
+                                    <a href="https://docs.azure.cn/billing/" id="zhongguojifei-a">中国区 Azure 计费文档</a>
+                                    <dd id="zhongguojifei-dd"><a href="https://docs.azure.cn/billing/">了解中国区 Azure订阅申请、账户管理、充值付款、帐单解读、发票索取等流程信息</a></dd>
+                              </div>
+
+
+
+                            </div></li>
+                            </a>
+                            
+                    </div></li><!--第四个下拉菜单搭建完毕-->
+                <li><a href="#" class="three">博客</a></li>
+                <li><a href="#" class="three">培训</a></li>
+                <li><a href="#" class="three">支持</a>
+                    <!--搭建第五个下拉菜单-->
+                    <div class="zhichi">
+                        <div id="lianxiwomen">
+                            <a href="https://support.azure.cn/zh-cn/support/contact/" id="lianxiwomen-a">联系我们</a>
+                            <dd id="lianxiwomen-dd"><a href="https://support.azure.cn/zh-cn/support/contact/">在线申请，微信，论坛，总之有各种方式联系到我们</a></dd>
+                      </div>
+                      <div id="zhichijihua">
+                        <a href="https://support.azure.cn/zh-cn/support/plans/" id="zhichijihua-a">支持计划</a>
+                        <dd id="zhichijihua-dd"><a href="https://support.azure.cn/zh-cn/support/plans/">看看 Azure究竟提供了哪些专业技能来提高你的工作效率</a></dd>
+                  </div>
+                  <div id="fuwu-panle">
+                    <a href="https://status.azure.com/zh-cn/status" id="fuwu-panle-a">服务仪表盘</a>
+                    <dd id="fuwu-panle-dd"><a href="https://status.azure.com/zh-cn/status">Azure 服务仪表报告</a></dd>
+              </div>
+                    </div>
+                
+                </li>
+                <li><a href="#" class="three">Azure市场</a></li>
+                <li><a href="#" class="three">Azure Global/China</a></li>
+            </ul>
+            <!--顶部右侧橙色按钮-->
+            <a href="#">
+            <div class="shenqingshiyong">
+                    <li><span>申请使用<i class="fa fa-angle-right"></i></span></li>
+            </div>
+            </a>
+        </div>
+                <!--顶部导航栏搭建完成-->
+
+
+
+
+
+    <!--搭建轮播图-->
+    <div id="outer">
+        <div id="lunbo-btn"></div>
+        <ul id="picturelist" style="width: 9222px;">
+            <li><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/"><img src="lunbotu1.png" width="1537px" height="370px"></a></li>
+            <li><a href="https://docs.azure.cn/zh-cn/virtual-network/ipv6-overview"><img src="lunbotu2.png" width="1537px" height="370px"></a></li>
+            <li><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/speech-services/"><img src="lunbotu3.png" width="1537px" height="370px"></a></li>
+            <li><a href="https://azure.microsoft.com/zh-cn/services/application-gateway/"><img src="lunbotu4.png" width="1537px" height="370px"></a></li>
+            <li><a href="https://azure.microsoft.com/zh-cn/services/app-service/"><img src="lunbotu5.png" width="1537px" height="370px"></a></li>
+            <li><a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/"><img src="lunbotu1.png" width="1537px" height="370px"></a></li>
+        </ul>
+        <a href="https://azure.microsoft.com/zh-cn/services/cognitive-services/metrics-advisor/"><div id="lunbotu-btn"><span id="lunbotu-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+        <!--五个导航条-->
+        <div id="daohangtiao">
+            <a href="javascript:;" class="daohangtiao-a"></a>
+            <a href="javascript:;" class="daohangtiao-a"></a>
+            <a href="javascript:;" class="daohangtiao-a"></a>
+            <a href="javascript:;" class="daohangtiao-a"></a>
+            <a href="javascript:;" class="daohangtiao-a"></a>
+        </div>
+    </div>
+<script>
+    var curindex = 0
+ var maxlen = document.getElementById("picturelist").getElementsByTagName("li").length-1
+ var timer = null
+ var width = 1537
+ timer = setInterval(change_next,6000)
+ function change_next(){
+     if(curindex<maxlen){
+         curindex++;
+         get_next()
+     }
+     else{
+         curindex = 0;
+         get_reset()
+     }
+ }
+ function get_next(){
+      var totalpicturelist = document.getElementById("picturelist")
+      totalpicturelist.style.marginLeft = "-"+width*curindex+"px"
+      totalpicturelist.style.transition = 1.5+"s"
+ }
+ function get_reset(){
+    var totalpicturelist = document.getElementById("picturelist")
+    totalpicturelist.style.marginLeft = "0px"
+    totalpicturelist.style.transition = "0s"
+ }
+</script>
+
+
+<!--搭建二维码-->
+<div id="QR-code"><i class="fa fa-qrcode"></i></div>
+<div id="QRcode"><img id="QRcode-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAC3ElEQVR4nO2dXW6EMAyE9xy5/z3pK1IJ82MHdmEs8bKJJzOfAanVqv2MMbauC9XRPqf/TIP1hfZ2chljbJ+Avhi0W4pJR9f1gnwpGdwK6ID+r+t6+QnQ6H2DTCpajK4ztK5Bd7EJaKK/g01AE/0dbJaDVsK7Q1FAsXsDOqC9H1gUCJ0XyhDQAR3QMmgXhGOG0e2C6twUXWwCWsilVkDfCfqKQGefXbEX9Ss3i3oFdEA/DPS2oGaBOrUqN0K3R6YC+ttAu4GONBhdparQFU2lb18BLWoqffsKaFFT6dsX/F2HIuYEVrSQh+r5bl6mAjqgHwaa2lUIUdVS/MzWUX9HTuQnoK8CzRpWyg3p6nYOWDlLOSOgA5rvewToasgqVDckWu/Iy2YI6IB+CeiqCRSOKeTLCexm6NAN6IB+AegzUSawAob5vHOAzrnOUAPaOLcFNNqsHOaYcR/hVYOoDnCmFdCirlIBLXpzC4I+2ozM7Pcog1JAV4eiaKl+UQV0QD8UtAIPFQKtDMA9w/VYrZlWQAf0S0ErhrtNsuuOV8a7ezPsK6DvBO2KoUBuXxcQxsuK18m2BTTloaMCmvDQUfR375QQCI4b2AXprHdoBXRAvwA0Cs/A6dzL+mJK6VfOVQYU0Cd+WkFXTSoDUowp/Y6XzmJ0A7qhAlr06lYL6COxquFZP4LXOSDGj+IdrQf0iR/FO1oP6BM/ine0bn3jvxrizr0rrlnt9wR0QD8M9HRXoTpMIq2jPR1+nb1Mf0BvF4Fe8QiteiyVV4O7rpyF8gZ0QL8AtFuKSXZ9Zl7RQP2qn8q5Y1zwJzMdszPDikZAE+szw4rGT4Ceba6+s5zASEuBxJy76ryAFs8I6DeCRoGYfmUoTgbkW+ljPAT0E0G7gRzobgYnL+MxoBvyBvS3g1bKAa2AdEG761W/swpo4oyAPtFz16t+Z7X8vyijd5oCp3NASKsD7r4voAP6WaD/AIP833nycKptAAAAAElFTkSuQmCC"><img id="ff" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEUyQzIwODA2RTk1MTFFNkEwRkVGN0MzNzI2Mzc1NDIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEUyQzIwODE2RTk1MTFFNkEwRkVGN0MzNzI2Mzc1NDIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowRTJDMjA3RTZFOTUxMUU2QTBGRUY3QzM3MjYzNzU0MiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowRTJDMjA3RjZFOTUxMUU2QTBGRUY3QzM3MjYzNzU0MiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoIwO70AAAMdSURBVHjalFRdSBRRFL73zuzszv7p+rPtaibUqimtVgpGgShYUSxlmBDUgxFREIUPPRQ9igVBDwlSBv1gjz70UhJIYdqDUBZqZJaEyfq7uu664+6MM3Nv9866uhUFHbiXmcP57j3fOee7EFwbBxAAY/2PEbp4htoEQubVCMAAcBBwKc9fjE9BjZ0w5M48S2Em/21J/T6vABP8R1L85qdOEAQdTd4mvyO6qrns/J3+5baeBWBG7G6dAAH9dg6/nr+KXSLXUpfdUGavuz/1ZUEpz7Nsc5luNWzZXyiuqrh7RHr8PsKygL+CIQFtAXdzpTPXhs4/C41OJoAFTSypDxo9e72mZNyRInFPvuVK9ywjwsEUWNEv1uZcqM5sfDo9E9PCMgYCBJJ2I+DeQCbt8j7H0HTi5Zg0H9VYDAMjeGa382ZfuG80BkSO1qyiQDxabD1b6fyzQk8a3YuJ3NZX4fb+JZoCTwnHFLw1wyCv4Iod1oeNnvwMbkXGwQh+9CEaimgBv+N0uS2JzxHh3UD2RHitZ2SF9fn2m/Dz5jxVI59mZaeV6/oY1TGLU1VysMRWlW9ueREqyRWq0licq8o0wCb0elw63jVztSarvsgak7GKycbE1G230N2XLUxFtHRwpogoXyNbE+wdk3o/S4CHlw5kuSyQGP2TZNwxGC2wowWZHPKJ6eQHJuNAx6khMSG2r2GnGbXWuzaC5iT8I6xWbzOnI4dm1faBMIVAcP3rujDoSBuDfGyX46TfTk+hvwKCHAcVDTMqhI4SeRdUOgcj0bhG00yBNVBDCStkOJjAdBL1lCJQShfJXx4ClbAmo7TZRgg0lDkWV3VVxSf8juFZZU7SinMEu4A4A3/v7fKpqgwaQJ08Ap2DywmNoKQkSr1mVSeiCdb6bOG4Ttt+uMhWxIqslrnNGAOfx1yaK4RWNUyIohOXlY2TkTZtvZ2XFEwrUOG1xFUclbHbzgUjWkTWPQ6aK6D3WHhICxFc0WhYJKGv6QxMXxLI1A/XhWkwhEzbyNAQTuOcdCbFBJN9BikXMEqy+aoYxqW3KV3Q5KcAAwD1g09n7nHgLwAAAABJRU5ErkJggg==">
+  <dd>用手机浏览本页</dd>
+</div>
+<script>
+    $(function(){
+        $("#QR-code").hover(function(){
+    $("#QRcode").fadeIn();
+    },function(){
+    $("#QRcode").fadeOut();
+  });
+    });
+</script>
+<!--二维码部分完毕-->
+
+                 <!--搭建中部三块导航-->
+                
+                    <div class="jishuwendang-daohang">
+                        <a href="https://docs.azure.cn">
+                        <div id="jishuwendang-daohang1">
+                            <span>技术文档<i class="fa fa-angle-right"></i></span>
+                        </div>
+                        <div id="jishuwendang-daohang2">
+                            <span>助你了解 Azure ，提高工作效率，<br>节省运营成本</br></span>
+                        </div>
+                        <img src="zhongbudaohang1.png" id="zhongbudaohang1">
+                        </a>      
+                </div>
+                <div class="anliyanjiu-daohang">
+                    <a href="https://customers.azure.cn/">
+                    <div id="anliyanjiu-daohang1">
+                        <span>案例研究<i class="fa fa-angle-right"></i></span>
+                    </div>
+                    <div id="anliyanjiu-daohang2">
+                        <span>了解目前正在使用Azure解决方案的<br>案例及分析</br></span>
+                    </div>
+                    <img src="zhongbudaohang2.png" id="zhongbudaohang2">
+                    </a>      
+            </div>
+            <div class="zuixingonggao-daohang">
+                <a href="https://updates.azure.cn/">
+                <div id="zuixingonggao-daohang1">
+                    <span>最新公告<i class="fa fa-angle-right"></i></span>
+                </div>
+                <div id="zuixingonggao-daohang2">
+                    <span>Azure 虚拟 WAN 正式发布</span>
+                </div>
+                <img src="zhongbudaohang3.png" id="zhongbudaohang3">
+                </a>      
+        </div>
+
+        <!--搭建中部列表-->
+        <div class="zhongbuliebiao">
+            <li id="1" style="color: white;">电子商务</li>
+            <li id="2">数字媒体</li>
+            <li id="3">备份和存档</li>
+            <li id="4">大数据和分析</li>
+            <li id="5">开发和测试</li>
+            <li id="6">游戏</li>
+            <li id="7">数字营销</li>
+            <div class="dianzishangwu">
+                <div id="dianzishangwu-div">
+                    <span id="dianzishangwu-span1">电子商务</span>
+                    <img src="zhongbuliebiao1.png" id="zhongbuliebiao1">
+                    <dd id="dianzishangwu-dd">无论你销售的是什么产品，你都需要同时满足客户和业务需求的安全、可缩放电子商务解决方案。通过自定义产品和优惠吸引客户，安全快速地处理事务并专注于产品交付和客户服务。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/ecommerce/"><div id="dianzishangwu-btn"><span id="dianzishangwu-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#1").click(function(){
+                        $("#dianzishangwu").fadeIn();
+                        $("#shuzimeiti").fadeOut();
+                        $("#beifenhecundang").fadeOut();
+                        $("#dashujuhefenxi").fadeOut();
+                        $("#kaifayuceshi").fadeOut();
+                        $("#youxi").fadeOut();
+                        $("#shuziyingxiao").fadeOut();
+                        $("#1").css("color","white");
+                        $("#2").css("color","black");
+                        $("#3").css("color","black");
+                        $("#4").css("color","black");
+                        $("#5").css("color","black");
+                        $("#6").css("color","black");
+                        $("#7").css("color","black");
+              });
+                });
+            </script>
+            <div id="shuzimeiti">
+                <div id="shuzimeiti-div">
+                    <span id="shuzimeiti-span1">数字媒体</span>
+                    <img src="zhongbuliebiao2.png" id="zhongbuliebiao2">
+                    <dd id="shuzimeiti-dd">从优质视频内容的全球分发到指导员工和调用其参与度，再到联系客户和进行互动，均可使用媒体的力量来实现企业转变。快速构建和部署视频解决方案、按需扩展，并随时随地使用任何设备交付视频。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/digital-media/"><div id="shuzimeiti-btn"><span id="shuzimeiti-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#2").click(function(){
+                        $("#dianzishangwu").fadeOut();
+                        $("#shuzimeiti").fadeIn();
+                        $("#beifenhecundang").fadeOut();
+                        $("#dashujuhefenxi").fadeOut();
+                        $("#kaifayuceshi").fadeOut();
+                        $("#youxi").fadeOut();
+                        $("#shuziyingxiao").fadeOut();
+                        $("#2").css("color","white");
+                        $("#1").css("color","black");
+                        $("#3").css("color","black");
+                        $("#4").css("color","black");
+                        $("#5").css("color","black");
+                        $("#6").css("color","black");
+                        $("#7").css("color","black");
+              });
+                });
+            </script>
+             <div id="beifenhecundang">
+                <div id="beifenhecundang-div">
+                    <span id="beifenhecundang-span1">备份和存档</span>
+                    <img src="zhongbuliebiao3.png" id="zhongbuliebiao3">
+                    <dd id="beifenhecundang-dd">保护驻留在任何位置的数据和应用程序，以避免成本高昂的业务中断或以满足符合性要求。安全地将本地备份存储和数据存档解决方案扩展到云，从而降低成本和复杂性，同时实现高效率和可伸缩性。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/backup-archive/"><div id="beifenhecundang-btn"><span id="beifenhecundang-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#3").click(function(){
+                        $("#dianzishangwu").fadeOut();
+                        $("#shuzimeiti").fadeOut();
+                        $("#beifenhecundang").fadeIn();
+                        $("#dashujuhefenxi").fadeOut();
+                        $("#kaifayuceshi").fadeOut();
+                        $("#youxi").fadeOut();
+                        $("#shuziyingxiao").fadeOut();
+                        $("#2").css("color","black");
+                        $("#1").css("color","black");
+                        $("#3").css("color","white");
+                        $("#4").css("color","black");
+                        $("#5").css("color","black");
+                        $("#6").css("color","black");
+                        $("#7").css("color","black");
+              });
+                });
+            </script>
+            <div id="dashujuhefenxi">
+                <div id="dashujuhefenxi-div">
+                    <span id="dashujuhefenxi-span1">大数据和分析</span>
+                    <img src="zhongbuliebiao4.png" id="zhongbuliebiao4">
+                    <dd id="dashujuhefenxi-dd">通过实时分析海量数据，从而提供更好的体验，并做出更好的决策。获取所需的见解以提供智能操作，从而增强客户互动、增加收入并降低成本。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/big-data/"><div id="dashujuhefenxi-btn"><span id="dashujuhefenxi-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#4").click(function(){
+                        $("#dianzishangwu").fadeOut();
+                        $("#shuzimeiti").fadeOut();
+                        $("#beifenhecundang").fadeOut();
+                        $("#dashujuhefenxi").fadeIn();
+                        $("#kaifayuceshi").fadeOut();
+                        $("#youxi").fadeOut();
+                        $("#shuziyingxiao").fadeOut();
+                        $("#2").css("color","black");
+                        $("#1").css("color","black");
+                        $("#3").css("color","black");
+                        $("#4").css("color","white");
+                        $("#5").css("color","black");
+                        $("#6").css("color","black");
+                        $("#7").css("color","black");
+              });
+                });
+            </script>
+            <div id="kaifayuceshi">
+                <div id="kaifayuceshi-div">
+                    <span id="kaifayuceshi-span1">开发和测试</span>
+                    <img src="zhongbuliebiao5.png" id="zhongbuliebiao5">
+                    <dd id="kaifayuceshi-dd">你将更快地提供更多功能 -保持使用最新的全套开发和测试工具，使你的团队以云速度进行协作和交付。通过可缩放的按需基础结构，根据你的要求快速创建一致的开发和测试环境。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/dev-test/"><div id="kaifayuceshi-btn"><span id="kaifayuceshi-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#5").click(function(){
+                        $("#dianzishangwu").fadeOut();
+                        $("#shuzimeiti").fadeOut();
+                        $("#beifenhecundang").fadeOut();
+                        $("#dashujuhefenxi").fadeOut();
+                        $("#kaifayuceshi").fadeIn();
+                        $("#youxi").fadeOut();
+                        $("#shuziyingxiao").fadeOut();
+                        $("#2").css("color","black");
+                        $("#1").css("color","black");
+                        $("#3").css("color","black");
+                        $("#4").css("color","black");
+                        $("#5").css("color","white");
+                        $("#6").css("color","black");
+                        $("#7").css("color","black");
+              });
+                });
+            </script>
+            <div id="youxi">
+                <div id="youxi-div">
+                    <span id="youxi-span1">游戏</span>
+                    <img src="zhongbuliebiao6.png" id="zhongbuliebiao6">
+                    <dd id="youxi-dd">在此处构建全球游戏体验，通过安全的全球云和游戏专用服务创建和运行游戏 - 适用于各种规模和预算的 studio。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/gaming/"><div id="youxi-btn"><span id="youxi-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#6").click(function(){
+                        $("#dianzishangwu").fadeOut();
+                        $("#shuzimeiti").fadeOut();
+                        $("#beifenhecundang").fadeOut();
+                        $("#dashujuhefenxi").fadeOut();
+                        $("#kaifayuceshi").fadeOut();
+                        $("#youxi").fadeIn();
+                        $("#shuziyingxiao").fadeOut();
+                        $("#2").css("color","black");
+                        $("#1").css("color","black");
+                        $("#3").css("color","black");
+                        $("#4").css("color","black");
+                        $("#5").css("color","black");
+                        $("#6").css("color","white");
+                        $("#7").css("color","black");
+              });
+                });
+            </script>
+            <div id="shuziyingxiao">
+                <div id="shuziyingxiao-div">
+                    <span id="shuziyingxiao-span1">数字营销</span>
+                    <img src="zhongbuliebiao7.png" id="zhongbuliebiao7">
+                    <dd id="shuziyingxiao-dd">利用丰富、个性化的数字营销体验吸引全球的客户。快速构建和启动根据客户需求自动缩放的数字营销活动。凭借强大的数据分析，分析并提高活动的成效。</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/solutions/digital-marketing/"><div id="shuziyingxiao-btn"><span id="shuziyingxiao-btn-span">了解更多 <i class="fa fa-angle-right"></i></span></div></a>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $("#7").click(function(){
+                        $("#dianzishangwu").fadeOut();
+                        $("#shuzimeiti").fadeOut();
+                        $("#beifenhecundang").fadeOut();
+                        $("#dashujuhefenxi").fadeOut();
+                        $("#kaifayuceshi").fadeOut();
+                        $("#youxi").fadeOut();
+                        $("#shuziyingxiao").fadeIn();
+                        $("#2").css("color","black");
+                        $("#1").css("color","black");
+                        $("#3").css("color","black");
+                        $("#4").css("color","black");
+                        $("#5").css("color","black");
+                        $("#6").css("color","black");
+                        $("#7").css("color","white");
+              });
+                });
+            </script>
+
+
+        </div>
+        
+
+
+        <!--中部多块产品栏-->
+        <h2>为您推荐全能高效的 Azure 云产品</h2>
+        <!--第一个产品-->
+        <div id="yunchanpin">
+            <div id="ASC">
+            <span id="ASC-span">Azure Spring Cloud</span>
+            <img src="yunchanpin1.png" width="108.8px" height="102.4px">
+            <dd id="ASC-dd1">联合 VMware 共同构建和运营的完全托管的 Spring Cloud 服务</dd>
+            <a href="https://www.azure.cn/pricing/details/spring-cloud/index.html">0元/小时 起 <i class="fa fa-angle-right"></i></a>
+            </div> 
+
+            <div id="zhuanyonglianjie">
+                <span id="zhuanyonglianjie-span">专用链接</span>
+                <img src="yunchanpin2.png" width="108.8px" height="102.4px">
+                <dd id="zhuanyonglianjie-dd1">改进了 Azure 服务资源的安全性和路由</dd>
+                <a href="https://www.azure.cn/pricing/details/private-link/index.html">0.102元/小时 起 <i class="fa fa-angle-right"></i></a>
+                </div>  
+            
+                <div id="ASE">
+                    <span id="ASE-span">Azure SQL Edge</span>
+                    <img src="yunchanpin3.png" width="108.8px" height="102.4px">
+                    <dd id="ASE-dd1">占用内存少、边缘优化的 SQL 数据库引擎，并内置 AI</dd>
+                    <a href="https://azure.microsoft.com/zh-cn/services/sql-edge/">0.0822元/小时 起 <i class="fa fa-angle-right"></i></a>
+                    </div> 
+
+                    <div id="ADs">
+                        <span id="ADs-span">Azure Databricks</span>
+                        <img src="yunchanpin4.png" width="108.8px" height="102.4px">
+                        <dd id="ADs-dd1">基于 Apache Spark<sup>TM</sup> 的简便快捷的协作式分析服务</dd>
+                        <a href="https://azure.microsoft.com/zh-cn/services/databricks/">0.75元/小时 起 <i class="fa fa-angle-right"></i></a>
+                        </div>
+
+                            <span id="xialaanniu">全部64个云产品<br><i class="fa fa-angle-down"></i></br></span>
+    </div>  
+    <div id="yunchanpin2">  
+    <div id="xuniji-1">
+        <span id="xuniji-1-span">虚拟机</span>
+        <img src="yunchanpin5.png" width="128.8px" height="102.4px">
+        <dd id="xuniji-1-dd1">在几秒钟内预配好<br> Windows 和 Linux 虚拟机</br></dd>
+        <a href="https://azure.microsoft.com/zh-cn/services/virtual-machines/">0.11元/小时 起 <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="yunfuwu-1">
+            <span id="yunfuwu-1-span">云服务</span>
+            <img src="yunchanpin6.png" width="128.8px" height="102.4px">
+            <dd id="yunfuwu-1-dd1">创建高度可用且可<br> 无限缩放的云应用程序和 API</br></dd>
+            <a href="https://www.azure.cn/pricing/details/cloud-services/index.html">0.11元/小时 起 <i class="fa fa-angle-right"></i></a>
+            </div> 
+    </div> 
+    </div>
+
+    <script>
+         $(function(){
+             $("#xialaanniu").click(function(){
+                 $("#yunchanpin2").slideDown();
+             });
+         })
+    </script>
+               
+
+
+
+               <!--看看谁在使用Azure-->
+               <img id="img" src="beijing.jpg" width="1546px" height="390px">
+                <h1>看看谁在使用 Azure</h1>
+
+
+
+
+
+
+
+
+                <!--地区-->
+                <span id="diqu">Azure 技术遍布全球</span>
+                <dd id="diqu-1">在中国，由世纪互联运营，数据中心 BGP 接入，支持异地复制</dd>
+                <img src="diqu.png" id="img-1" width="1236.8px" height="552px">
+
+
+
+                <!--分界线-->
+                <div id="fenjie">
+                    <ul>
+                        <li><a href="https://www.azure.cn/support/announcement/domain-names/index.html">未经备案的域名可能会被屏蔽</a></li>
+                        <li><a href="https://www.azure.cn/support/announcement/rectification-announcement/index.html">关于自查整改“翻墙”行为的通知！</a></li>
+                        <li><a href="https://www.azure.cn/support/announcement/network-security-announcement/index.html">互联网信息服务单位网络安全责任告知书</a></li>
+                    </ul>
+                </div>
+
+
+
+
+                <!--footer-->
+                <div id="footer">
+                    <h6 id="h6">关注我们</h6>
+                    <img src="qrcode1.png" width="107.25px" height="120.75px" id="qrcode1">
+                    <h6 id="h6-1">快速获取支持</h6>
+                    <img src="qrcode2.png" width="107.25px" height="120.75px" id="qrcode2">
+                    <h6 id="h6-2">Azure</h6>
+
+                    <ul id="footer-ul-1">
+                        <li><a href="https://updates.azure.cn/what-is-azure/">认识 Azure</a></li>
+                        <li><a href="https://azure.microsoft.com/zh-cn/services/">产品</a></li>
+                        <li><a href="https://www.azure.cn/pricing/">价格</a></li>
+                        <li><a href="https://www.azure.cn/support/legal/offer-rate-plans/">优惠详情</a></li>
+                        <li><a href="https://docs.azure.cn/articles/azure-china-purchasing-guidance">中国区 Azure 购买指南</a></li>
+                        <li><a href="https://webinars.azure.cn/zh-cn/video-center/">视频中心</a></li>
+                        <li><a href="https://azure.microsoft.com/zh-cn/solutions/">通用解决方案</a></li>
+                        <li><a href="https://customers.azure.cn/">客户案例</a></li>
+                        <li><a href="https://docs.azure.cn/zh-cn/">技术文档</a></li>
+                        <li><a href="https://azure.microsoft.com/zh-cn/blog/">博客 </a></li>
+                    </ul>
+
+
+                    <h6 id="h6-3">支持</h6>
+                    <ul id="footer-ul-2">
+                        <li><a href="https://support.azure.cn/support/contact/">联系我们</a></li>
+                        <li><a href="https://support.azure.cn/zh-cn/support/plans/">支持计划</a></li>
+                        <li><a href="https://status.azure.com/status">服务仪表盘</a></li>
+                        <li><a href="https://www.azure.cn/support/legal/">法律</a></li>
+                        <li><a href="https://www.azure.cn/support/legal/sla/">服务级别协议</a></li>
+                        <li><a href="https://www.azure.cn/support/icp/">ICP备案</a></li>
+                        <li><a href="https://www.azure.cn/support/announcement/public-security-registration/">公安备案</a></li>
+                        <li><a href="https://docs.azure.cn/billing/billing-get-invoice/">发票</a></li>
+                        <li><a href="https://support.azure.cn/zh-cn/support/faq/">常见问题</a></li>
+                        <li><a href="https://updates.azure.cn/">最新公告</a></li>
+                    </ul>
+
+
+                    <h6 id="h6-4">信任中心</h6>
+                    <ul id="footer-ul-3">
+                        <li><a href="https://www.trustcenter.cn/zh-cn/default.html">信任中心首页</a></li>
+                        <li><a href="https://www.trustcenter.cn/zh-cn/security/default.html">安全性</a></li>
+                        <li><a href="https://www.trustcenter.cn/zh-cn/privacy/default.html">隐私与管控</a></li>
+                        <li><a href="https://www.trustcenter.cn/zh-cn/compliance/default.html">合规性</a></li>
+                        <li><a href="https://www.trustcenter.cn/zh-cn/transparency/default.html">透明度</a></li>
+                    </ul>
+
+
+                    <h6 id="h6-5">账户</h6>
+                    <ul id="footer-ul-4">
+                        <li><a href="https://login.partner.microsoftonline.cn/organizations/oauth2/v2.0/authorize?client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.chinacloudapi.cn%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D3uCSjx6C9bqNKSA-8P80845gyvvQhkhf_9fVvpwhRbRurvngvS1MaWnQ8x60pRNdJ3o7WOoa4EeCN9MbKpy_ZgfO7gK490l32CEoF-4MjvhkwoJ_Z9_hjG_z_OhZPIGjftJ9DDUWsVmrtm92gXuhXYKw0Ws1ArS0IDggGiKSpL--_YAp3iG7IadHO_qZ0A9NsMTrLHX3SpUw_SBv0IU2GAvByILeDz6fqxKCIdfbNq3eSaM_v6HhJTGU_FIqxkXH&response_mode=form_post&nonce=637446293535220325.ZDFiNjMxYjEtMmQ5NS00MWQzLTkxYzQtNDAxOWEzMDdmYTNmNWRiM2FlNDYtNmU4Yy00MzQ5LTljMTYtMTc3MGQ2OTc4NTQy&redirect_uri=https%3A%2F%2Fportal.azure.cn%2Fsignin%2Findex%2F&site_id=501430&msafed=0&client-request-id=938df0c4-5d0a-416f-9e21-c721105a6771&x-client-SKU=ID_NET45&x-client-ver=5.3.0.0">Azure 门户</a></li>
+                        <li><a href="https://account.windowsazure.cn/Home/Index">充值、订阅与账单</a></li>
+                        <li><a href="https://login.partner.microsoftonline.cn/organizations/oauth2/v2.0/authorize?client_id=c44b4083-3bb0-49c1-b47d-974e53cbdf3c&response_type=code%20id_token&scope=https%3A%2F%2Fmanagement.core.chinacloudapi.cn%2F%2Fuser_impersonation%20openid%20email%20profile&state=OpenIdConnect.AuthenticationProperties%3D3uCSjx6C9bqNKSA-8P80845gyvvQhkhf_9fVvpwhRbRurvngvS1MaWnQ8x60pRNdJ3o7WOoa4EeCN9MbKpy_ZgfO7gK490l32CEoF-4MjvhkwoJ_Z9_hjG_z_OhZPIGjftJ9DDUWsVmrtm92gXuhXYKw0Ws1ArS0IDggGiKSpL--_YAp3iG7IadHO_qZ0A9NsMTrLHX3SpUw_SBv0IU2GAvByILeDz6fqxKCIdfbNq3eSaM_v6HhJTGU_FIqxkXH&response_mode=form_post&nonce=637446293535220325.ZDFiNjMxYjEtMmQ5NS00MWQzLTkxYzQtNDAxOWEzMDdmYTNmNWRiM2FlNDYtNmU4Yy00MzQ5LTljMTYtMTc3MGQ2OTc4NTQy&redirect_uri=https%3A%2F%2Fportal.azure.cn%2Fsignin%2Findex%2F&site_id=501430&msafed=0&client-request-id=938df0c4-5d0a-416f-9e21-c721105a6771&x-client-SKU=ID_NET45&x-client-ver=5.3.0.0">企业门户网站</a></li>
+                    </ul>
+
+
+
+                    <img src="1.png" id="footer-img">
+
+
+
+                    <span id="language"><i class="fa fa-globe"></i>简体中文<i class="fa fa-angle-down"></i></span>
+
+                    <span id="fangwen"><a href="https://azure.microsoft.com/zh-cn/">访问全球版 Azure 网站</a></span>
+
+                    <span id="hu"><a href="http://www.beian.miit.gov.cn/">沪ICP备13015306号-25</a></span>
+
+                    <span id="gongwang"><img src="jinghui.png"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502002224">沪公网安备 31011502002224号</a></span>
+
+                    <span id="yinsi1"><a href="https://www.azure.cn/support/legal/privacy-statement/">隐私</a></span>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
